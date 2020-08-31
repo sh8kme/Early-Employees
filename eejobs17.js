@@ -10,11 +10,12 @@ function getJobs() {
 
 function successFunc(t) {
 
-    return $(".loading").hide(), console.log(url), v = t.currentPage , 25 <= t.count ? $("#loadMore").show() : $("#loadMore").hide(), $.each(t, function(t, e) {
-$("#Careers").json2html({
+    return $(".loading").hide(), console.log(url), v = t.currentPage , 25 <= t.count ? $("#loadMore").show() : $("#loadMore").hide(), $("#Careers").json2html({
                 
                 class: "${currentPage}"
             }),
+    $.each(t, function(t, e) {
+
         $.each(e, function(t, e) {
             let l = [e];
             $("#Careers").json2html(l, {
