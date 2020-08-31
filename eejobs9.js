@@ -10,6 +10,7 @@ function getJobs() {
 
 function successFunc(t) {
     return $(".loading").hide(), console.log(url), console.log(t.currentPage), 25 <= t.count ? $("#loadMore").show() : $("#loadMore").hide(), $.each(t, function(t, e) {
+        $("#Careers").addClass(t.currentPage);
         $.each(e, function(t, e) {
             let l = [e];
             $("#Careers").json2html(l, {
