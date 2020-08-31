@@ -9,7 +9,7 @@ function getJobs() {
 }
 
 function successFunc(t) {
-    return $(".loading").hide(), console.log(url), console.log(t.count), 25 <= t.count ? $("#loadMore").show() : $("#loadMore").hide(), $.each(t, function(t, e) {
+    return $(".loading").hide(), console.log(url), console.log(t.currentPage), 25 <= t.count ? $("#loadMore").show() : $("#loadMore").hide(), $.each(t, function(t, e) {
         $.each(e, function(t, e) {
             let l = [e];
             $("#Careers").json2html(l, {
