@@ -9,8 +9,8 @@ function getJobs() {
 }
 
 function successFunc(t) {
-     $("#Careers").addClass(t.currentPage);
-    return $(".loading").hide(), console.log(url), console.log(t.currentPage), 25 <= t.count ? $("#loadMore").show() : $("#loadMore").hide(), $.each(t, function(t, e) {
+
+    return $(".loading").hide(), console.log(url), $("#Careers").addClass(t.currentPage), 25 <= t.count ? $("#loadMore").show() : $("#loadMore").hide(), $.each(t, function(t, e) {
 
         $.each(e, function(t, e) {
             let l = [e];
