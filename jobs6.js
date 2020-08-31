@@ -305,7 +305,7 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
         var q = p.indexOf('-');
         var l = p.substring(0, q);
         size.push(l), console.log(size.join("&employeesNumber=")), siz = size.join("&employeesNumber=")
-    }), sta = "", stag = [], $(".stage .ee-active").each(function(t, e) {
+    }), sta = "", stag = [], $(".funding .ee-active").each(function(t, e) {
         var l = $(this).html();
         stag.push(l), console.log(stag.join("&stag=")), sta = stag.join("&stage=")
     }), getJobs()
