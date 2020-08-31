@@ -1,4 +1,4 @@
-vvar getUrlParameter = function(t) {
+var getUrlParameter = function(t) {
     var e, l, o = window.location.search.substring(1).split("&");
     for (l = 0; l < o.length; l++)
         if ((e = o[l].split("="))[0] === t) return void 0 === e[1] || decodeURIComponent(e[1])
