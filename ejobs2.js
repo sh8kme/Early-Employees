@@ -1,4 +1,4 @@
-var getUrlParameter = function(t) {
+vvar getUrlParameter = function(t) {
     var e, l, o = window.location.search.substring(1).split("&");
     for (l = 0; l < o.length; l++)
         if ((e = o[l].split("="))[0] === t) return void 0 === e[1] || decodeURIComponent(e[1])
@@ -286,7 +286,7 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
                 $(".dropdown-list.size .filter").not($(this)).removeClass("ee-active");
     }
     if ($(t.target).hasClass('stage')) {
-                $(".dropdown-list.size .filter").not($(this)).removeClass("ee-active");
+                $(".dropdown-list.funding .filter").not($(this)).removeClass("ee-active");
     }
     document.contains(document.getElementById("SelectorTags")) && (document.getElementById("SelectorTags").innerHTML = ""), $(this).toggleClass("ee-active"), $(".ee-active").each(function(t, e) {
         var l = $(this).html();
