@@ -1,11 +1,11 @@
- var getUrlParameter = function(t) {
+var getUrlParameter = function(t) {
     var e, l, o = window.location.search.substring(1).split("&");
     for (l = 0; l < o.length; l++)
         if ((e = o[l].split("="))[0] === t) return void 0 === e[1] || decodeURIComponent(e[1])
 };
 
 function getJobs() {
-    return $(".remote .ee-active")[0] ? rem = "1" : rem = "", sear = $("#inputSearch").val(), eJobs(limit, start, loc, acc, inv, rem, rol, sear, size)
+    return $(".remote .ee-active")[0] ? rem = "1" : rem = "", sear = $("#inputSearch").val(), eJobs(limit, start, loc, acc, inv, rem, rol, sear, size, stag)
 }
 
 function successFunc(t) {
