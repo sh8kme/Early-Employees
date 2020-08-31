@@ -280,9 +280,6 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
         var q = p.indexOf('-');
         var l = p.substring(0, q);
         size.push(l), console.log(size.join("&employeesNumber=")), siz = size.join("&employeesNumber=")
-    }), sta = "", stag = [], $(".funding .ee-active").each(function(t, e) {
-        var l = $(this).html();
-        stag.push(l), console.log(stag.join("&stag=")), sta = stag.join("&stage=")
     }), getJobs())
 }), $(".filter").on("click", function(t) {
     if ($(t.target).hasClass('employees')) {
@@ -336,8 +333,5 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
         var q = p.indexOf('-');
         var l = p.substring(0, q);
         size.push(l), console.log(size.join("&employeesNumber=")), siz = size.join("&employeesNumber=")
-    }), sta = "", stag = [], $(".funding .ee-active").each(function(t, e) {
-        var l = $(this).html();
-        stag.push(l), console.log(stag.join("&stag=")), sta = stag.join("&stage=")
     }), getJobs(), t.preventDefault()
 });
