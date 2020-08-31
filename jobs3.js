@@ -1,4 +1,4 @@
-var getUrlParameter = function(t) {
+ var getUrlParameter = function(t) {
     var e, l, o = window.location.search.substring(1).split("&");
     for (l = 0; l < o.length; l++)
         if ((e = o[l].split("="))[0] === t) return void 0 === e[1] || decodeURIComponent(e[1])
@@ -275,9 +275,15 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
     }), rol = "", rolr = [], $(".role .ee-active").each(function(t, e) {
         var l = $(this).html();
         rolr.push(l), console.log(rolr.join("&jobtitle=")), rol = rolr.join("&jobtitle=")
+    }), siz = "", size = [], $(".size .ee-active").each(function(t, e) {
+        var p = $(this).html();
+        var q = p.indexOf('-');
+        var l = p.substring(0, q);
+        size.push(l), console.log(size.join("&employeesNumber=")), siz = size.join("&employeesNumber=")
     }), getJobs())
 }), $(".filter").on("click", function(t) {
     if ($(t.target).hasClass('employees')) {
+         t.preventDefault();
         $(".dropdown-list.size .filter").removeClass("ee-active");
     }
     document.contains(document.getElementById("SelectorTags")) && (document.getElementById("SelectorTags").innerHTML = ""), $(this).toggleClass("ee-active"), $(".ee-active").each(function(t, e) {
@@ -302,7 +308,7 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
         size.push(l), console.log(size.join("&employeesNumber=")), siz = size.join("&employeesNumber=")
     }), getJobs()
 }), $(document).on("click", ".filtertag", function() {
-    var t = $(this).html();
+    var t = $(this).text();
     $("a.ee-active:contains(" + t + ")")[0].click()
 }), $("#loadMore").on("click", function(t) {
     limit = $(this).attr("data-limit"), start = $("#Careers > .career-item").length, loc = "", blkstr = [], $(".location .ee-active").each(function(t, e) {
