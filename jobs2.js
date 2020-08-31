@@ -302,7 +302,7 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
         size.push(l), console.log(size.join("&employeesNumber=")), siz = size.join("&employeesNumber=")
     }), getJobs()
 }), $(document).on("click", ".filtertag", function() {
-    var t = $(this).text();
+    var t = $(this).html();
     $("a.ee-active:contains(" + t + ")")[0].click()
 }), $("#loadMore").on("click", function(t) {
     limit = $(this).attr("data-limit"), start = $("#Careers > .career-item").length, loc = "", blkstr = [], $(".location .ee-active").each(function(t, e) {
