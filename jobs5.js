@@ -216,8 +216,8 @@ function iJobs(t, e, l, o, c, a, i, n) {
     })
 }
 
-function eJobs(t, e, l, o, c, a, i, n, s) {
-    urlm = "https://684984654984.xyz:8443/job/merged", console.log(urlm), $(".loading").show(), $("#loadMore").hide(), url = urlm, startx = e, limitx = t, s = "&location=" + l + "&accelerator=" + o + "&investor=" + c + "&remote=" + a + "&job%20title=" + i + "&employeesNumber=" + s + "&term=" + n, s = s.replace(/[^=&]+=(&|$)/g, "").replace(/&$/, ""), console.log(url + "?page=" + startx + "&size=" + limitx + s), $.ajax({
+function eJobs(t, e, l, o, c, a, i, n, s, m) {
+    urlm = "https://684984654984.xyz:8443/job/merged", console.log(urlm), $(".loading").show(), $("#loadMore").hide(), url = urlm, startx = e, limitx = t, s = "&location=" + l + "&accelerator=" + o + "&investor=" + c + "&remote=" + a + "&job%20title=" + i + "&employeesNumber=" + s + "&stage=" + m + "&term=" + n, s = s.replace(/[^=&]+=(&|$)/g, "").replace(/&$/, ""), console.log(url + "?page=" + startx + "&size=" + limitx + s), $.ajax({
         type: "GET",
         url: url + "?page=" + startx + "&size=" + limitx + s + "&sort=dateAdded,desc",
         dataType: "json",
@@ -305,6 +305,9 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
         var q = p.indexOf('-');
         var l = p.substring(0, q);
         size.push(l), console.log(size.join("&employeesNumber=")), siz = size.join("&employeesNumber=")
+    }), sta = "", stag = [], $(".stage .ee-active").each(function(t, e) {
+        var l = $(this).html();
+        stag.push(l), console.log(stag.join("&stag=")), sta = stag.join("&stage=")
     }), getJobs()
 }), $(document).on("click", ".filtertag", function() {
     var t = $(this).text();
