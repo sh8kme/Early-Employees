@@ -316,7 +316,7 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
     var t = $(this).text();
     $("a.ee-active:contains(" + t + ")")[0].click()
 }), $("#loadMore").on("click", function(t) {
-    limit = $(this).attr("data-limit"), start = $(("#Careers > .career-item").length ) /25, loc = "", blkstr = [], $(".location .ee-active").each(function(t, e) {
+    limit = $(this).attr("data-limit"), start = t.currentPage + 1, loc = "", blkstr = [], $(".location .ee-active").each(function(t, e) {
         var l = $(this).html();
         blkstr.push(l), console.log(blkstr.join("&location=")), loc = blkstr.join("&location=")
     }), acc = "", accstr = [], $(".accelerator .ee-active").each(function(t, e) {
