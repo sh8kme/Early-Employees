@@ -9,7 +9,7 @@ function getJobs() {
 }
 
 function successFunc(t) {
-     $("#Careers").addClass(t.currentPage);
+     $("#Careers").addClass('blah');
     return $(".loading").hide(), console.log(url), console.log(t.currentPage), 25 <= t.count ? $("#loadMore").show() : $("#loadMore").hide(), $.each(t, function(t, e) {
 
         $.each(e, function(t, e) {
