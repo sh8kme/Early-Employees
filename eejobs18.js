@@ -10,7 +10,7 @@ function getJobs() {
 
 function successFunc(t) {
 
-    return $(".loading").hide(), console.log(url), v = t.currentPage , 25 <= t.count ? $("#loadMore").show() : $("#loadMore").hide(), $("#Careers").json2html({
+    return $(".loading").hide(), console.log(url), v = t.currentPage , 25 <= t.count ? $("#loadMore").show() : $("#loadMore").hide(), $("#Careers").json2html( t, {
                 
                 class: "${currentPage}"
             }),
