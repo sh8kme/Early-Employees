@@ -9,8 +9,8 @@ function getJobs() {
 }
 
 function successFunc(t) {
-
-    return $(".loading").hide(), console.log(url), console.log(t.currentPage), 25 <= t.count ? $("#loadMore").show() : $("#loadMore").hide(), $.each(t, function(t, e) {
+z = t.currentPage;
+    return $(".loading").hide(), console.log(url), console.log(z), 25 <= t.count ? $("#loadMore").show() : $("#loadMore").hide(), $.each(t, function(t, e) {
 
         $.each(e, function(t, e) {
             let l = [e];
@@ -318,7 +318,7 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
     var t = $(this).text();
     $("a.ee-active:contains(" + t + ")")[0].click()
 }), $("#loadMore").on("click", function(t) {
-    limit = $(this).attr("data-limit"), start = (t.currentPage) + 1 , loc = "", blkstr = [], $(".location .ee-active").each(function(t, e) {
+    limit = $(this).attr("data-limit"), start = z + 1 , loc = "", blkstr = [], $(".location .ee-active").each(function(t, e) {
         var l = $(this).html();
         blkstr.push(l), console.log(blkstr.join("&location=")), loc = blkstr.join("&location=")
     }), acc = "", accstr = [], $(".accelerator .ee-active").each(function(t, e) {
