@@ -10,7 +10,7 @@ function getJobs() {
 
 function successFunc(t) {
 
-    return $(".loading").hide(), console.log(url), $('body').addClass(t.currentPage) , 25 <= t.count ? $("#loadMore").show() : $("#loadMore").hide(), $.each(t, function(t, e) {
+    return $(".loading").hide(), console.log(url), $('body').addClass(e.currentPage) , 25 <= t.count ? $("#loadMore").show() : $("#loadMore").hide(), $.each(t, function(t, e) {
 
         $.each(e, function(t, e) {
             let l = [e];
