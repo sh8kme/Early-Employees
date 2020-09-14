@@ -214,7 +214,7 @@ function iJobs(t, e, l, o, c, a, i, n) {
     }), $(".location").each(function(t, e) {
         $.trim($(".location").html()) || console.log("asdasdasd")
     }), $("#loadAll").removeClass("hidden-button"), $("#loadAll").on("click", function(t) {
-        limit = "25", start = "0", loc = "", acc = "", inv = "", rem = "", rol = "", siz="", sta="", getJobs(), $(this).addClass("hidden-button")
+        limit = "25", start = "0", loc = "", acc = "", inv = "", rem = "", rol = "", getJobs(), $(this).addClass("hidden-button")
     })
 }
 
@@ -282,10 +282,7 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
         var q = p.indexOf('-');
         var l = p.substring(0, q);
         size.push(l), console.log(size.join("&employeesNumber=")), siz = size.join("&employeesNumber=")
-    }), sta = "", stag = [], $(".funding .ee-active").each(function(t, e) {
-        var l = $(this).html();
-        stag.push(l), console.log(stag.join("&stag=")), sta = stag.join("&stage=")
-    }), getJobs(), t.preventDefault()
+    }), getJobs())
 }), $(".filter").on("click", function(t) {
     if ($(t.target).hasClass('employees')) {
                 $(".dropdown-list.size .filter").not($(this)).removeClass("ee-active");
