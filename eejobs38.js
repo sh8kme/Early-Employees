@@ -290,9 +290,7 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
     if ($(t.target).hasClass('employees')) {
                 $(".dropdown-list.size .filter").not($(this)).removeClass("ee-active");
     }
-    if ($(t.target).hasClass('stage')) {
-                $(".dropdown-list.funding .filter").not($(this)).removeClass("ee-active");
-    }
+    
     document.contains(document.getElementById("SelectorTags")) && (document.getElementById("SelectorTags").innerHTML = ""), $(this).toggleClass("ee-active"), $(".ee-active").each(function(t, e) {
         var l = $(this).html();
         document.getElementById("SelectorTags").innerHTML += "<span class='filtertag'>" + l + "</span>"
