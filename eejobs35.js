@@ -285,7 +285,7 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
     }), sta = "", stag = [], $(".funding .ee-active").each(function(t, e) {
         var l = $(this).html();
         stag.push(l), console.log(stag.join("&stag=")), sta = stag.join("&stage=")
-    }), getJobs()
+    }), getJobs())
 }), $(".filter").on("click", function(t) {
     if ($(t.target).hasClass('employees')) {
                 $(".dropdown-list.size .filter").not($(this)).removeClass("ee-active");
