@@ -214,7 +214,7 @@ function iJobs(t, e, l, o, c, a, i, n) {
     }), $(".location").each(function(t, e) {
         $.trim($(".location").html()) || console.log("asdasdasd")
     }), $("#loadAll").removeClass("hidden-button"), $("#loadAll").on("click", function(t) {
-        limit = "25", start = "0", loc = "", acc = "", inv = "", rem = "", rol = "", getJobs(), $(this).addClass("hidden-button")
+        limit = "25", start = "0", loc = "", acc = "", inv = "", rem = "", rol = "", size="", stag="", getJobs(), $(this).addClass("hidden-button")
     })
 }
 
