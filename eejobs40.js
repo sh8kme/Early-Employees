@@ -276,7 +276,7 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
         invstr.push(l), console.log(accstr.join("&investor=")), inv = invstr.join("&investor=")
     }), rol = "", rolr = [], $(".role .ee-active").each(function(t, e) {
         var l = $(this).html();
-        rolr.push(l), console.log(rolr.join("&term=")), rol = rolr.join("&jobtitle=")
+        rolr.push(l), console.log(rolr.join("&jobtitle=")), rol = rolr.join("&jobtitle=")
     }), siz = "", size = [], $(".size .ee-active").each(function(t, e) {
         var p = $(this).html();
         var q = p.indexOf('-');
@@ -305,7 +305,7 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
         invstr.push(l), console.log(accstr.join("&investor=")), inv = invstr.join("&investor=")
     }), rol = "", rolr = [], $(".role .ee-active").each(function(t, e) {
         var l = $(this).html();
-        rolr.push(l), console.log(rolr.join("&term=")), rol = rolr.join("&jobtitle=")
+        rolr.push(l), console.log(rolr.join("&jobtitle=")), rol = rolr.join("&jobtitle=")
     }), siz = "", size = [], $(".size .ee-active").each(function(t, e) {
         var p = $(this).html();
         var q = p.indexOf('-');
@@ -330,7 +330,7 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
         invstr.push(l), console.log(accstr.join("&investor=")), inv = invstr.join("&investor=")
     }), rol = "", rolr = [], $(".role .ee-active").each(function(t, e) {
         var l = $(this).html();
-        rolr.push(l), console.log(rolr.join("&term=")), rol = rolr.join("&jobtitle=")
+        rolr.push(l), console.log(rolr.join("&jobtitle=")), rol = rolr.join("&jobtitle=")
     }), siz = "", size = [], $(".size .ee-active").each(function(t, e) {
         var p = $(this).html();
         var q = p.indexOf('-');
