@@ -203,7 +203,7 @@ z = t.currentPage;
 }
 
 function iJobs(t, e, l, o, c, a, i, n) {
-    urlj = "https://684984654984.xyz:8443/job/" + j, $(".loading").show(), $("#loadMore").hide(), url = urlj, startx = e, limitx = t, s = "&location=" + l + "&accelerator=" + o + "&investor=" + c + "&remote=" + a + "&term=" + i + "&term=" + n, s = s.replace(/[^=&]+=(&|$)/g, "").replace(/&$/, ""), console.log(url + "?page=" + startx + "&size=" + limitx + s), $.ajax({
+    urlj = "https://684984654984.xyz:8443/job/" + j, $(".loading").show(), $("#loadMore").hide(), url = urlj, startx = e, limitx = t, s = "&location=" + l + "&accelerator=" + o + "&investor=" + c + "&remote=" + a + "&jobtitle=" + i + "&term=" + n, s = s.replace(/[^=&]+=(&|$)/g, "").replace(/&$/, ""), console.log(url + "?page=" + startx + "&size=" + limitx + s), $.ajax({
         type: "GET",
         url: url + "?page=" + startx + "&size=" + limitx + s + "&sort=dateAdded,desc",
         dataType: "json",
@@ -219,7 +219,7 @@ function iJobs(t, e, l, o, c, a, i, n) {
 }
 
 function eJobs(t, e, l, o, c, a, i, n, s, m) {
-    urlm = "https://684984654984.xyz:8443/job/merged", console.log(urlm), $(".loading").show(), $("#loadMore").hide(), url = urlm, startx = e, limitx = t, s = "&location=" + l + "&accelerator=" + o + "&investor=" + c + "&remote=" + a + "&term=" + i + "&employeesNumber=" + s + "&stage=" + m + "&term=" + n, s = s.replace(/[^=&]+=(&|$)/g, "").replace(/&$/, ""), console.log(url + "?page=" + startx + "&size=" + limitx + s), $.ajax({
+    urlm = "https://684984654984.xyz:8443/job/merged", console.log(urlm), $(".loading").show(), $("#loadMore").hide(), url = urlm, startx = e, limitx = t, s = "&location=" + l + "&accelerator=" + o + "&investor=" + c + "&remote=" + a + "&jobtitle=" + i + "&employeesNumber=" + s + "&stage=" + m + "&term=" + n, s = s.replace(/[^=&]+=(&|$)/g, "").replace(/&$/, ""), console.log(url + "?page=" + startx + "&size=" + limitx + s), $.ajax({
         type: "GET",
         url: url + "?page=" + startx + "&size=" + limitx + s + "&sort=dateAdded,desc",
         dataType: "json",
