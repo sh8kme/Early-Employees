@@ -288,7 +288,7 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
     }), getJobs())
 }), $(".filter").on("click", function(t) {
     if ($(t.target).hasClass('employees')) {
-                $(".dropdown-list.size .filter").not($(this)).removeClass("ee-active");
+                //$(".dropdown-list.size .filter").not($(this)).removeClass("ee-active");
     }
     
     document.contains(document.getElementById("SelectorTags")) && (document.getElementById("SelectorTags").innerHTML = ""), $(this).toggleClass("ee-active"), $(".ee-active").each(function(t, e) {
