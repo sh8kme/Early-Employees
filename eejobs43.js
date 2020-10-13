@@ -287,8 +287,8 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
         stag.push(l), console.log(stag.join("&stag=")), sta = stag.join("&stage=")
     }), getJobs())
 }), $(".filter").on("click", function(t) {
-    if ($(t.target).hasClass('employees')) {
-                //$(".dropdown-list.size .filter").not($(this)).removeClass("ee-active");
+    if ($(t.target).hasClass('jt')) {
+                $(".dropdown-list.size .filter").not($(this)).removeClass("ee-active");
     }
     
     document.contains(document.getElementById("SelectorTags")) && (document.getElementById("SelectorTags").innerHTML = ""), $(this).toggleClass("ee-active"), $(".ee-active").each(function(t, e) {
