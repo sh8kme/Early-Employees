@@ -276,8 +276,13 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
         invstr.push(l), console.log(accstr.join("&investor=")), inv = invstr.join("&investor=")
     }), rol = "", rolr = [], $(".role .ee-active").each(function(t, e) {
         var p = $(this).html();
+        c = 'end';
+        if (p.indexOf(c) !== -1) {
         var q = p.indexOf('end');
         var l = p.substring(0, q);
+        } else {
+            var l = $(this).html();  
+        }
         rolr.push(l), console.log(rolr.join("&jobtitle=")), rol = rolr.join("&jobtitle=")
     }), siz = "", size = [], $(".size .ee-active").each(function(t, e) {
         var p = $(this).html();
@@ -290,7 +295,7 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
     }), getJobs())
 }), $(".filter").on("click", function(t) {
     if ($(t.target).hasClass('jt')) {
-               // $(".dropdown-list.role .filter").not($(this)).removeClass("ee-active");
+               $(".dropdown-list.role .filter").not($(this)).removeClass("ee-active");
     }
     
     document.contains(document.getElementById("SelectorTags")) && (document.getElementById("SelectorTags").innerHTML = ""), $(this).toggleClass("ee-active"), $(".ee-active").each(function(t, e) {
@@ -339,8 +344,13 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
         invstr.push(l), console.log(accstr.join("&investor=")), inv = invstr.join("&investor=")
     }), rol = "", rolr = [], $(".role .ee-active").each(function(t, e) {
        var p = $(this).html();
+        c = 'end';
+        if (p.indexOf(c) !== -1) {
         var q = p.indexOf('end');
         var l = p.substring(0, q);
+        } else {
+            var l = $(this).html();  
+        }
         rolr.push(l), console.log(rolr.join("&jobtitle=")), rol = rolr.join("&jobtitle=")
     }), siz = "", size = [], $(".size .ee-active").each(function(t, e) {
         var p = $(this).html();
