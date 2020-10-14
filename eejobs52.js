@@ -203,7 +203,7 @@ z = t.currentPage;
 }
 
 function iJobs(t, e, l, o, c, a, i, n) {
-    urlj = "https://684984654984.xyz:8443/job/merged" + j, $(".loading").show(), $("#loadMore").hide(), url = urlj, startx = e, limitx = t, s = "&location=" + l + "&accelerator=" + o + "&investor=" + c + "&remote=" + a + "&job%20title=" + i + "&term=" + n, s = s.replace(/[^=&]+=(&|$)/g, "").replace(/&$/, ""), console.log(url + "?page=" + startx + "&size=" + limitx + s), $.ajax({
+    urlj = "https://684984654984.xyz:8443/job/" + j, $(".loading").show(), $("#loadMore").hide(), url = urlj, startx = e, limitx = t, s = "&location=" + l + "&accelerator=" + o + "&investor=" + c + "&remote=" + a + "&job%20title=" + i + "&term=" + n, s = s.replace(/[^=&]+=(&|$)/g, "").replace(/&$/, ""), console.log(url + "?page=" + startx + "&size=" + limitx + s), $.ajax({
         type: "GET",
         url: url + "?page=" + startx + "&size=" + limitx + s + "&sort=dateAdded,desc",
         dataType: "json",
@@ -229,7 +229,7 @@ function eJobs(t, e, l, o, c, a, i, n, s, m) {
         success: successFunc
     }), $(".location").each(function(t, e) {
         $.trim($(".location").html()) || console.log("asdasdasd")
-    }), console.log(url)
+    }), console.log(url + 'initial')
 }
 
 function lJobs(t, e, l, o, s, c, a, i) {
