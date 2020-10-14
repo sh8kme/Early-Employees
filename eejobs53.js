@@ -229,7 +229,7 @@ function eJobs(t, e, l, o, c, a, i, n, s, m) {
         success: successFunc
     }), $(".location").each(function(t, e) {
         $.trim($(".location").html()) || console.log("asdasdasd")
-    }), console.log(url + 'initial')
+    }), console.log("blah")
 }
 
 function lJobs(t, e, l, o, s, c, a, i) {
