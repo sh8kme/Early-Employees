@@ -304,9 +304,9 @@ j = "", "undefined" !== getUrlParameter("job") && (j = getUrlParameter("job"), i
         var l = $(this).html();
         invstr.push(l), console.log(accstr.join("&investor=")), inv = invstr.join("&investor=")
     }), rol = "", rolr = [], $(".role .ee-active").each(function(t, e) {
-        var q = $(this).html();
-        var r = q.replace('end','');
-        var l = r.replace('-','');
+       var p = $(this).html();
+        var q = p.indexOf('end');
+        var l = p.substring(0, q);
         rolr.push(l), console.log(rolr.join("&jobtitle=")), rol = rolr.join("&jobtitle=")
     }), siz = "", size = [], $(".size .ee-active").each(function(t, e) {
         var p = $(this).html();
