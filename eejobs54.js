@@ -205,7 +205,7 @@ z = t.currentPage;
 function iJobs(t, e, l, o, c, a, i, n) {
     urlj = "https://684984654984.xyz:8443/job/" + j, $(".loading").show(), $("#loadMore").hide(), url = urlj, startx = e, limitx = t, s = "&location=" + l + "&accelerator=" + o + "&investor=" + c + "&remote=" + a + "&job%20title=" + i + "&term=" + n, s = s.replace(/[^=&]+=(&|$)/g, "").replace(/&$/, ""), console.log(url + "?page=" + startx + "&size=" + limitx + s), $.ajax({
         type: "GET",
-        url: url + "?page=" + startx + "&size=" + limitx + s + "&sort=dateAdded,desc",
+        url: url + "?page=" + startx + "&size=" + limitx + s + "&sort=dateAdded,asc",
         dataType: "json",
         data: {
             get_param: "value"
@@ -221,7 +221,7 @@ function iJobs(t, e, l, o, c, a, i, n) {
 function eJobs(t, e, l, o, c, a, i, n, s, m) {
     urlm = "https://684984654984.xyz:8443/job/merged", console.log(urlm), $(".loading").show(), $("#loadMore").hide(), url = urlm, startx = e, limitx = t, s = "&location=" + l + "&accelerator=" + o + "&investor=" + c + "&remote=" + a + "&job%20title=" + i + "&employeesNumber=" + s + "&stage=" + m + "&term=" + n, s = s.replace(/[^=&]+=(&|$)/g, "").replace(/&$/, ""), console.log(url + "?page=" + startx + "&size=" + limitx + s), $.ajax({
         type: "GET",
-        url: url + "?page=" + startx + "&size=" + limitx + s + "&sort=dateAdded,desc",
+        url: url + "?page=" + startx + "&size=" + limitx + s + "&sort=dateAdded,asc",
         dataType: "json",
         data: {
             get_param: "value"
@@ -235,7 +235,7 @@ function eJobs(t, e, l, o, c, a, i, n, s, m) {
 function lJobs(t, e, l, o, s, c, a, i) {
     urll = "https://684984654984.xyz:8443/job/merged", startx = "0", limitx = "25", $(".loading").show(), $("#loadMore").hide(), url = urll, $.ajax({
         type: "GET",
-        url: url + "?page=" + startx + "&size=" + limitx + "&sort=dateAdded,desc",
+        url: url + "?page=" + startx + "&size=" + limitx + "&sort=dateAdded,asc",
         dataType: "json",
         data: {
             get_param: "value"
@@ -249,7 +249,7 @@ function lJobs(t, e, l, o, s, c, a, i) {
 function cJobs(t) {
     urll = "https://684984654984.xyz:8443/job/merged", startx = "0", limitx = "25", $(".loading").show(), $("#loadMore").hide(), url = urll, $.ajax({
         type: "GET",
-        url: url + "?page=" + startx + "&size=" + limitx + "&company=" + t + "&sort=dateAdded,desc",
+        url: url + "?page=" + startx + "&size=" + limitx + "&company=" + t + "&sort=dateAdded,asc",
         dataType: "json",
         data: {
             get_param: "value"
