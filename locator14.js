@@ -193,7 +193,12 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
                     $('.filtertag').each(function() {
                         var value = $(this).html();
                         if (value == prop.type) {
+                            if (prop.distance) {
+                    var roundedDistance = Math.round(prop.distance * 100) / 100;
+                    if (roundedDistance < 100) {
                             listing.className = 'item active';
+                    }
+                            }
                         }
                     });
                 });
