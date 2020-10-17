@@ -193,7 +193,7 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
                     $('.filtertag').each(function() {
                         var value = $(this).html();
                         if (value == prop.type) {
-                            listing.className = 'item active';
+                            listing.className = 'item';
                         }
                     });
                 });
@@ -219,7 +219,7 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
                     if (roundedDistance < 100) {
                         details.innerHTML +=
                             '<p class="l-distance"><strong>' + roundedDistance + ' kms away</strong></p>';
-                         this.parentNode.classList.remove('active');
+                       listing.className = 'item active';
                     }
                 }
                 link.addEventListener('click', function(e) {
