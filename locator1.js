@@ -218,7 +218,7 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
                     var roundedDistance = Math.round(prop.distance * 100) / 100;
                     if (roundedDistance < 50) {
                         details.innerHTML +=
-                            '<p><strong>' + roundedDistance + ' kms away</strong></p>';
+                            '<p class="l-distance"><strong>' + roundedDistance + ' kms away</strong></p>';
                     }
                 }
                 link.addEventListener('click', function(e) {
