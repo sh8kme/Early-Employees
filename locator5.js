@@ -265,9 +265,9 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
         $('#listings').click(function() {
             map.resize();
         });
-        $(".item:has(.l-distance)").addClass("on");
+        
     });
-
+$(".item").addClass("on");
 });
 $('#Expertise').hide()
 $('#Lawyer').click(function() {
