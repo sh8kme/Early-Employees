@@ -262,8 +262,7 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
                     '<h4>' + currentFeature.properties.name + ' ' + currentFeature.properties.lastname + '</h4>' +
                     '<div class="content-l"><h5>' +
                     currentFeature.properties.address +
-                    '</h5>' + '<span>' + currentFeature.properties.type + '</span>' +
-                    '<a href="profile?profile=' + currentFeature.properties.mid + '" target="_blank" class="l-profile-link">View Profile &#10230;</a></div>'
+                    '</h5>' + '<span>' + currentFeature.properties.type + '</span>' 
                 )
                 .addTo(map);
         }
