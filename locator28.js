@@ -222,7 +222,7 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
                         details.innerHTML +=
                             '<p class="l-distance"><strong>' + roundedDistance + ' kms away</strong></p>';
                        details.innerHTML +=
-                            '<a href="profile?profile=' + prop.mid + '" target="_blank" class="blue l-profile-link">Profile</a>';
+                            '<a href="profile?profile=' + prop.mid + '" target="_blank" class="blue l-profile-link">View Profile &#10230;</a>';
                    }
                 
                 }
