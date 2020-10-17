@@ -216,12 +216,11 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
                 var details = listing.appendChild(document.createElement('div'));
                 if (prop.distance) {
                     var roundedDistance = Math.round(prop.distance * 100) / 100;
-                    if (roundedDistance < 100) {
+                    
                         details.innerHTML +=
                             '<p class="l-distance"><strong>' + roundedDistance + ' kms away</strong></p>';
                      '<a href="profile?profile=' + prop.mid + '" target="_blank" class="l-profile-link">View Profile &#10230;</a>';
-                        
-                    }
+                
                 }
                 link.addEventListener('click', function(e) {
                     for (var i = 0; i < data.features.length; i++) {
