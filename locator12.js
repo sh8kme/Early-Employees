@@ -189,15 +189,11 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
                 var listing = listings.appendChild(document.createElement('div'));
                 listing.id = "listing-" + prop.id;
                 listing.className = 'item active';
-               $('a.dropdown-link').click(function() {
+           $('a.dropdown-link').click(function() {
                     $('.filtertag').each(function() {
                         var value = $(this).html();
                         if (value == prop.type) {
-                             if (prop.distance) {
-                    var roundedDistance = Math.round(prop.distance * 100) / 100;
-                    if (roundedDistance < 100) {
                             listing.className = 'item active';
-                    }
                         }
                     });
                 });
