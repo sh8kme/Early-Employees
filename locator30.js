@@ -41,7 +41,7 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
             style: 'mapbox://styles/lawggle/ckdkhap9e159e1imq6foj0ln5',
             center: [-123.1083712, 49.25652230],
             zoom: 7,
-            scrollZoom: false,
+            scrollZoom: true,
             attributionControl: false
         });
 
