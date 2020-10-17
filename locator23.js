@@ -212,7 +212,7 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
                     link.innerHTML += '<h5>' + prop.phone + '<h5>';
                 }
                 link.innerHTML += '<span>' + prop.type + '</span>';
-                 link.innerHTML += '<a href="profile?profile=' + prop.MID + '" target="_blank"><span class="blue">Profile</span></a>';
+                
                 /* Add details to the individual listing. */
                 var details = listing.appendChild(document.createElement('div'));
                 if (prop.distance) {
@@ -221,6 +221,8 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
                         listing.className = 'item active active-d';
                         details.innerHTML +=
                             '<p class="l-distance"><strong>' + roundedDistance + ' kms away</strong></p>';
+                       details.innerHTML +=
+                            '<a href="profile?profile=' + prop.MID + '" target="_blank"><span class="blue">Profile</span></a>';
                    }
                 
                 }
