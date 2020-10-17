@@ -265,6 +265,7 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
         $('#listings').click(function() {
             map.resize();
         });
+        $(".item:has(.l-distance)").addClass("on");
     });
 
 });
@@ -332,4 +333,4 @@ if ($(window).width() < 769) {
         $('#listings').show();
     });
 }
-$(".item:has(.l-distance)").addClass("on");
+
