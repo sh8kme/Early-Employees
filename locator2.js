@@ -332,3 +332,6 @@ if ($(window).width() < 769) {
         $('#listings').show();
     });
 }
+if($('#listings').find('p.l-distance').length !== 0) {
+    console.log('found');
+}
