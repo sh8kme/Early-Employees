@@ -89,9 +89,10 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
                 mapboxgl: mapboxgl,
                 placeholder: 'Enter Your City...',
             });
-            buildLocationList(stores);
+           
 
             document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
+             buildLocationList(stores);
             addMarkers();
 
             geocoder.on('result', function(ev) {
