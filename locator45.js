@@ -272,12 +272,12 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
         $('#listings').click(function() {
             map.resize();
         });
-        
-    });
-map.on('map.loaded', function () {
+        map.on('map.loaded', function () {
 
 console.log('loaded')
 });
+    });
+
 });
 $('#Expertise').hide()
 $('#Lawyer').click(function() {
