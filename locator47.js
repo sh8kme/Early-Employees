@@ -274,7 +274,7 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
         });
        map.on('idle', () => {
   console.log('idle');
-}
+});
     });
 
 });
