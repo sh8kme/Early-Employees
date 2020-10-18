@@ -60,6 +60,7 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
                 "properties": {
                     "mid": jsonData[i].MID,
                     "name": jsonData[i]['First Name'],
+                    "plan": jsonData[i]['Membership Type'],
                     "profile": jsonData[i].Bio,
                     "lastname": jsonData[i]['Last Name'],
                     "firm": jsonData[i].Firm,
@@ -189,7 +190,7 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
                 var listings = document.getElementById('listings');
                 var listing = listings.appendChild(document.createElement('div'));
                 listing.id = "listing-" + prop.id;
-                listing.className = 'item active active-c';
+                listing.className = 'item active active-c' + prop.plan;
           $('a.dropdown-link').click(function() {
                     $('.filtertag').each(function() {
                         var value = $(this).html();
