@@ -274,7 +274,10 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
         });
         
     });
+map.on('map.loaded', function () {
 
+console.log('loaded')
+});
 });
 $('#Expertise').hide()
 $('#Lawyer').click(function() {
