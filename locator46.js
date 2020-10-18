@@ -272,10 +272,9 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
         $('#listings').click(function() {
             map.resize();
         });
-        map.on('map.loaded', function () {
-
-console.log('loaded')
-});
+       map.on('idle', () => {
+  console.log('idle');
+}
     });
 
 });
