@@ -274,7 +274,7 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
         });
        map.on('idle', () => {
              $("#listings .item:first").before( $( ".item.exclusive" ) );
-           if(!$('.items.active').length){
+           if(!$('.item.active').length){
                $('.no-results').addClass('display');
            }
   console.log('idle');
