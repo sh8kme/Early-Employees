@@ -273,7 +273,7 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
         });
         
     });
-
+$('.recurring').append( $('#listings') );
 });
 $('#Expertise').hide()
 $('#Lawyer').click(function() {
