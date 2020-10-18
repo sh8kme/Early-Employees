@@ -273,6 +273,7 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
             map.resize();
         });
        map.on('idle', () => {
+             $('.recurring').parent().before(".item:first");
   console.log('idle');
 });
     });
