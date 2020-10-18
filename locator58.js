@@ -40,7 +40,7 @@ $("#fireSearch .w-dropdown-link").on("click", function() {
             container: 'map',
             style: 'mapbox://styles/lawggle/ckdkhap9e159e1imq6foj0ln5',
             center: [-123.1083712, 49.25652230],
-           zoom: -1,
+          // zoom: 1,
            scrollZoom: !1,
         attributionControl: !1,
         });
@@ -249,7 +249,7 @@ map.addControl(new mapboxgl.NavigationControl());
         function flyToStore(currentFeature) {
             map.flyTo({
                 center: currentFeature.geometry.coordinates,
-                zoom: 15
+                zoom: 10
             });
         }
 
