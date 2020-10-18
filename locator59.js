@@ -262,7 +262,7 @@ map.addControl(new mapboxgl.NavigationControl());
                 })
                 .setLngLat(currentFeature.geometry.coordinates)
                 .setHTML(
-                    '<h4>' + currentFeature.properties.name + ' ' + currentFeature.properties.lastname + '</h4>' +
+                    '<a href="profile?profile=' +  currentFeature.mid + '" target="_blank"><h4>' + currentFeature.properties.name + ' ' + currentFeature.properties.lastname + '</h4></a>' +
                     '<div class="content-l"><h5>' +
                     currentFeature.properties.address +
                     '</h5>' + '<span>' + currentFeature.properties.type + '</span>' 
