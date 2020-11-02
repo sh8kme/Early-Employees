@@ -88,7 +88,7 @@ map.addControl(new mapboxgl.NavigationControl());
             var geocoder = new MapboxGeocoder({
                 accessToken: mapboxgl.accessToken,
                 mapboxgl: mapboxgl,
-                placeholder: 'Enter Your City...',
+                placeholder: 'Address, city or postal code...',
             });
            
 
