@@ -206,7 +206,7 @@ map.addControl(new mapboxgl.NavigationControl());
                 if (prop.image) {
                     link.innerHTML = '<div class="i-wrap"><img src="' + prop.image + '" class="l-profile"></div>';
                 }
-                link.innerHTML += '<h4>' + prop.name + ' ' + prop.lastname + '</h4>';
+                link.innerHTML += '<a href="profile?profile=' + prop.mid + '" target="_blank" class="blue l-profile-link"><h4>' + prop.name + ' ' + prop.lastname + '</h4></a>';
                 if (prop.firm) {
                     link.innerHTML += '<h5>' + prop.firm + '<h5>';
                 }
