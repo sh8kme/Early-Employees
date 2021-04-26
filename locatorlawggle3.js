@@ -191,8 +191,8 @@ map.addControl(new mapboxgl.NavigationControl());
                 var prop = store.properties;
                 var listings = document.getElementById('listings');
                 var listing = listings.appendChild(document.createElement('div'));
-                listing.id = prop.hide + " listing-" + prop.id;
-                listing.className = 'item active active-c';
+                listing.id = "listing-" + prop.id;
+                listing.className = prop.hide + ' item active active-c';
           $('a.dropdown-link').click(function() {
                     $('.filtertag').each(function() {
                         var value = $(this).html();
