@@ -210,9 +210,7 @@ map.addControl(new mapboxgl.NavigationControl());
                 if (prop.firm) {
                     link.innerHTML += '<h5>' + prop.firm + '<h5>';
                 }
-                if (prop.phone) {
-                    link.innerHTML += '<h5>' + prop.phone + '<h5>';
-                }
+                
                 link.innerHTML += '<span>' + prop.type + '</span>';
                 
                 /* Add details to the individual listing. */
