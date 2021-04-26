@@ -1,4 +1,4 @@
-  
+   
  $(function() {
     $('.loading').fadeOut();
 });
@@ -192,7 +192,7 @@ map.addControl(new mapboxgl.NavigationControl());
                 var listings = document.getElementById('listings');
                 var listing = listings.appendChild(document.createElement('div'));
                 listing.id = "listing-" + prop.id;
-                listing.className = 'item active active-c ' + prop.hide;
+                listing.className = 'item active active-c ';
           $('a.dropdown-link').click(function() {
                     $('.filtertag').each(function() {
                         var value = $(this).html();
@@ -203,7 +203,7 @@ map.addControl(new mapboxgl.NavigationControl());
                 });
                 var link = listing.appendChild(document.createElement('a'));
                 link.href = '#';
-                link.className = 'details';
+                link.className = 'details' + prop.hide;
                 link.id = "link-" + prop.id;
                 if (prop.image) {
                     link.innerHTML = '<div class="i-wrap"><img src="' + prop.image + '" class="l-profile"></div>';
