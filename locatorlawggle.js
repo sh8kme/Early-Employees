@@ -192,7 +192,7 @@ map.addControl(new mapboxgl.NavigationControl());
                 var listings = document.getElementById('listings');
                 var listing = listings.appendChild(document.createElement('div'));
                 listing.id = "listing-" + prop.id;
-                listing.className = 'item active active-c ' + prop.hide;
+                listing.className = 'item active active-c';
           $('a.dropdown-link').click(function() {
                     $('.filtertag').each(function() {
                         var value = $(this).html();
