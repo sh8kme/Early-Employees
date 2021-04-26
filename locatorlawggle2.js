@@ -166,7 +166,7 @@ map.addControl(new mapboxgl.NavigationControl());
             stores.features.forEach(function(marker) {
                 var el = document.createElement('div');
                 el.id = "marker-" + marker.properties.id;
-                el.className = 'marker ' + marker.properties.hide;
+                el.className = 'marker';
                 new mapboxgl.Marker(el, {
                         offset: [0, -23]
                     })
@@ -191,7 +191,7 @@ map.addControl(new mapboxgl.NavigationControl());
                 var prop = store.properties;
                 var listings = document.getElementById('listings');
                 var listing = listings.appendChild(document.createElement('div'));
-                listing.id = "listing-" + prop.id;
+                listing.id = prop.hide + " listing-" + prop.id;
                 listing.className = 'item active active-c';
           $('a.dropdown-link').click(function() {
                     $('.filtertag').each(function() {
