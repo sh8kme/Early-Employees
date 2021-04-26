@@ -127,7 +127,7 @@ map.addControl(new mapboxgl.NavigationControl());
                 buildLocationList(stores);
                 createPopUp(stores.features[0]);
                 var activeListing = document.getElementById('listing-' + stores.features[0].properties.id);
-                activeListing.classList.add('active');
+                activeListing.classList.add('active' + stores.features[0].properties.hide);
                 var bbox = getBbox(stores, 0, searchResult);
                 map.fitBounds(bbox, {
                     padding: 100
@@ -192,7 +192,7 @@ map.addControl(new mapboxgl.NavigationControl());
                 var listings = document.getElementById('listings');
                 var listing = listings.appendChild(document.createElement('div'));
                 listing.id = "listing-" + prop.id;
-                listing.className = prop.hide + ' item active active-c';
+                listing.className = 'item active active-c';
           $('a.dropdown-link').click(function() {
                     $('.filtertag').each(function() {
                         var value = $(this).html();
@@ -203,7 +203,7 @@ map.addControl(new mapboxgl.NavigationControl());
                 });
                 var link = listing.appendChild(document.createElement('a'));
                 link.href = '#';
-                link.className = 'details ' + prop.hide;
+                link.className = 'details';
                 link.id = "link-" + prop.id;
                 if (prop.image) {
                     link.innerHTML = '<div class="i-wrap"><img src="' + prop.image + '" class="l-profile"></div>';
