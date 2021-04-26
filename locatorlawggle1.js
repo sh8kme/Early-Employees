@@ -166,7 +166,7 @@ map.addControl(new mapboxgl.NavigationControl());
             stores.features.forEach(function(marker) {
                 var el = document.createElement('div');
                 el.id = "marker-" + marker.properties.id;
-                el.className = 'marker';
+                el.className = 'marker ' + marker.properties.hide;
                 new mapboxgl.Marker(el, {
                         offset: [0, -23]
                     })
