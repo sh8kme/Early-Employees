@@ -192,7 +192,7 @@ map.addControl(new mapboxgl.NavigationControl());
                 var listings = document.getElementById('listings');
                 var listing = listings.appendChild(document.createElement('div'));
                 listing.id = "listing-" + prop.id;
-                listing.className = 'item active active-c ' + prop.hide;
+                listing.className = 'item active active-c';
           $('a.dropdown-link').click(function() {
                     $('.filtertag').each(function() {
                         var value = $(this).html();
@@ -220,7 +220,7 @@ map.addControl(new mapboxgl.NavigationControl());
                 if (prop.distance) {
                     var roundedDistance = Math.round(prop.distance * 100) / 100;
                    if (roundedDistance < 100) {
-                        listing.className = 'item active active-d ' + prop.plan;
+                        listing.className = prop.hide + ' item active active-d ' + prop.plan;
                         details.innerHTML +=
                             '<p class="l-distance"><strong>' + roundedDistance + ' kms away</strong></p>';
                        details.innerHTML +=
