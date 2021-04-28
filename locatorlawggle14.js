@@ -98,7 +98,7 @@ map.addControl(new mapboxgl.NavigationControl());
             document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
              buildLocationList(stores);
             addMarkers();
- $(".loader").hide();
+ 
             geocoder.on('result', function(ev) {
                 var searchResult = ev.result.geometry;
                 var options = {
@@ -274,6 +274,7 @@ map.addControl(new mapboxgl.NavigationControl());
             map.resize();
         });
        map.on('idle', () => {
+         $(".loader").hide();
              $("#listings .item:first").before( $( ".item.exclusive" ) );
            if(!$('.item.active').length){
                $('.no-results').addClass('display');
