@@ -281,7 +281,7 @@ map.addControl(new mapboxgl.NavigationControl());
   console.log('idle');
 });
     });
- $(".loader").hide();
+
 });
 $('#Expertise').hide()
 $('#Lawyer').click(function() {
@@ -346,4 +346,8 @@ if ($(window).width() < 769) {
         $('.map-wrap, .map-display').hide();
         $('#listings').show();
     });
+}
+
+if ( $("mapboxgl-ctrl-geocoder").length ) {
+   $(".loader").hide();
 }
