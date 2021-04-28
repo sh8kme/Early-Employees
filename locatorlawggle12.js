@@ -348,6 +348,6 @@ if ($(window).width() < 769) {
     });
 }
 
-if ( $("mapboxgl-ctrl-geocoder").length ) {
+if ( $(".mapboxgl-ctrl-geocoder").length ) {
    $(".loader").hide();
 }
