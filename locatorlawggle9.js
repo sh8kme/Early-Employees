@@ -18,6 +18,7 @@ $('#Expertise .w-dropdown-link').click(function() {
     $('#Expertise').html(this);
 });
 $("#fireSearch .w-dropdown-link").on("click", function() {
+  $(".loader").show();
     function test(type, language) {
         var url = $.trim('https://sheet.best/api/sheets/c537b30c-6a62-49e9-bbb7-913b076eee99/tabs/Pros/search?Language=*' + lang + '*&Type of Pro=' + pro + '&Area of Law=*' + expert + '*');
         url = url.replace(/ /g, '%20');
