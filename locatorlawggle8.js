@@ -316,9 +316,9 @@ $('#fireSearch .w-dropdown-link').click(function() {
     setTimeout(function() {
         $('.next.button').trigger('tap');
     }, 2000);
-    if ($(window).width() < 769) {
-        $('.next.button').removeClass('gone');
-    }
+   // if ($(window).width() < 769) {
+     //   $('.next.button').removeClass('gone');
+   // }
     $('#fireSearch, #fireSearch + .w-dropdown-list').toggleClass('w--open')
 });
 $('.w-dropdown-link').click(function() {
