@@ -96,6 +96,7 @@ map.addControl(new mapboxgl.NavigationControl());
            
 
             document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
+          $(".loader").hide();
              buildLocationList(stores);
             addMarkers();
  
@@ -350,8 +351,3 @@ if ($(window).width() < 769) {
     });
 }
 
-map.on('sourcedata', function(e) {
-if (e.isSourceLoaded) {
-$(".loader").show();
-}
-});
