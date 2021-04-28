@@ -281,7 +281,7 @@ map.addControl(new mapboxgl.NavigationControl());
   console.log('idle');
 });
     });
-
+ $(".loader").hide();
 });
 $('#Expertise').hide()
 $('#Lawyer').click(function() {
