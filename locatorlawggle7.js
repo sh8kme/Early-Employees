@@ -327,7 +327,7 @@ $('.w-dropdown-link').click(function() {
     document.getElementById("selectorTags").innerHTML +=
         "<span class='filtertag'>" + d + "</span>";
 });
-$('.next.button').click(function() {
+$('.next.button').on('click', function () {
     $(this).addClass('gone');
 });
 $("#geocoder").keydown(function() {
