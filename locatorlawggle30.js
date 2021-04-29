@@ -335,9 +335,14 @@ $('.next.button').on('click', function () {
     $(this).addClass('gone');
 });
 $("#geocoder").keydown(function() {
- $('.next.button').removeClass('gone');
+// $('.next.button').removeClass('gone');
 
 });
+geocoder.on('select', function () {
+   $('.next.button').trigger('tap');
+  console.log("tapped");
+});
+
 if ($(window).width() < 769) {
 
     $('.map-wrap, .map-display').hide();
