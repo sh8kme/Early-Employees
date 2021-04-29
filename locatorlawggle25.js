@@ -335,12 +335,11 @@ $('.next.button').on('click', function () {
     $(this).addClass('gone');
 });
 $("#geocoder").keydown(function() {
- $('.next.button').removeClass('gone');
-  $('.mapboxgl-ctrl-geocoder .suggestions > .active > a').on('click', function () {
-    console.log("heyclicked");
-        $('.next.button').trigger('tap');
-  
-});
+ //$('.next.button').removeClass('gone');
+ if($('.mapboxgl-ctrl-geocoder--button').css('display') == 'none')
+{
+$('.next.button').trigger('tap');
+}
 });
 if ($(window).width() < 769) {
 
