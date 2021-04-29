@@ -335,7 +335,7 @@ $('.next.button').on('click', function () {
     $(this).addClass('gone');
 });
 $("#geocoder").keydown(function() {
-   // $('.next.button').removeClass('gone');
+ $('.next.button').removeClass('gone');
   
 });
 if ($(window).width() < 769) {
@@ -352,7 +352,7 @@ if ($(window).width() < 769) {
     });
 }
 
-$('.mapboxgl-ctrl-geocoder--suggestion').on('click', function () {
+$('.suggestions').on('click', function () {
         $('.next.button').trigger('tap');
   
 });
