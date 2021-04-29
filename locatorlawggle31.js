@@ -338,7 +338,7 @@ $("#geocoder").keydown(function() {
 // $('.next.button').removeClass('gone');
 
 });
-geocoder.on('select', function () {
+$("#geocoder").on('select', function () {
    $('.next.button').trigger('tap');
   console.log("tapped");
 });
