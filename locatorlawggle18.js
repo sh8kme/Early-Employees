@@ -335,7 +335,11 @@ $('.next.button').on('click', function () {
     $(this).addClass('gone');
 });
 $("#geocoder").keydown(function() {
-    $('.next.button').removeClass('gone');
+   // $('.next.button').removeClass('gone');
+  $('.mapboxgl-ctrl-geocoder--suggestion').on('click', function () {
+        $('.next.button').trigger('tap');
+  
+});
 });
 if ($(window).width() < 769) {
 
