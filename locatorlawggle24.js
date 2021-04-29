@@ -337,6 +337,7 @@ $('.next.button').on('click', function () {
 $("#geocoder").keydown(function() {
  $('.next.button').removeClass('gone');
   $('.mapboxgl-ctrl-geocoder .suggestions > .active > a').on('click', function () {
+    console.log("heyclicked");
         $('.next.button').trigger('tap');
   
 });
