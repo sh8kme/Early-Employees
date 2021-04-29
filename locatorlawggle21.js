@@ -336,7 +336,7 @@ $('.next.button').on('click', function () {
 });
 $("#geocoder").keydown(function() {
  $('.next.button').removeClass('gone');
-  $('.suggestions').on('click', function () {
+  $('.suggestions-wrapper').on('click', function () {
         $('.next.button').trigger('tap');
   
 });
