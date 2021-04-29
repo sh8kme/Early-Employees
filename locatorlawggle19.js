@@ -336,10 +336,7 @@ $('.next.button').on('click', function () {
 });
 $("#geocoder").keydown(function() {
    // $('.next.button').removeClass('gone');
-  $('.mapboxgl-ctrl-geocoder--suggestion').on('click', function () {
-        $('.next.button').trigger('tap');
   
-});
 });
 if ($(window).width() < 769) {
 
@@ -355,3 +352,7 @@ if ($(window).width() < 769) {
     });
 }
 
+$('.mapboxgl-ctrl-geocoder--suggestion').on('click', function () {
+        $('.next.button').trigger('tap');
+  
+});
