@@ -335,11 +335,8 @@ $('.next.button').on('click', function () {
     $(this).addClass('gone');
 });
 $("#geocoder").keydown(function() {
- //$('.next.button').removeClass('gone');
-$(".suggestions-wrapper ul li").click(function(){
+ $('.next.button').removeClass('gone');
 
-$('.next.button').trigger('tap');
-});
 });
 if ($(window).width() < 769) {
 
