@@ -336,10 +336,10 @@ $('.next.button').on('click', function () {
 });
 $("#geocoder").keydown(function() {
  //$('.next.button').removeClass('gone');
- if($('.mapboxgl-ctrl-geocoder--button').css('display') == 'none')
-{
+$(".select").click(function(){
+
 $('.next.button').trigger('tap');
-}
+});
 });
 if ($(window).width() < 769) {
 
