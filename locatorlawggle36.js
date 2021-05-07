@@ -1,4 +1,12 @@
-  
+  var isMobile = {
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    any: function() {
+        return isMobile.iOS();
+    }
+};
+
  $(function() {
     $('.loading').fadeOut();
 });
@@ -334,10 +342,13 @@ $('.w-dropdown-link').click(function() {
 $('.next.button').on('click', function () {
     $(this).addClass('gone');
 });
+
+if(!isMobile.iOS()){
 $("#geocoder").keydown(function() {
-// $('.next.button').removeClass('gone');
+$('.next.button').removeClass('gone');
 
 });
+};
 $("#geocoder").on('select', function () {
   // $('.next.button').trigger('tap');
 var ele = document.getElementById('triggerTap');
