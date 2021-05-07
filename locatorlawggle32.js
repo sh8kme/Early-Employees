@@ -339,7 +339,10 @@ $("#geocoder").keydown(function() {
 
 });
 $("#geocoder").on('select', function () {
-   $('.next.button').trigger('tap');
+   //$('.next.button').trigger('tap');
+  document.querySelectorAll('.next-button')[0].click();
+
+
   console.log("tapped");
 });
 
