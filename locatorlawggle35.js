@@ -339,8 +339,11 @@ $("#geocoder").keydown(function() {
 
 });
 $("#geocoder").on('select', function () {
-   $('.next.button').trigger('tap');
-
+  // $('.next.button').trigger('tap');
+var ele = document.getElementById('triggerTap');
+var click_ev = document.createEvent("MouseEvent");
+click_ev.initEvent("click", false /* bubble */, true /* cancelable */);
+ele.dispatchEvent(click_ev);
   console.log("tapped");
 });
 
