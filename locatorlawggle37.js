@@ -1,12 +1,3 @@
-  var isMobile = {
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    any: function() {
-        return isMobile.iOS();
-    }
-};
-
  $(function() {
     $('.loading').fadeOut();
 });
@@ -343,18 +334,21 @@ $('.next.button').on('click', function () {
     $(this).addClass('gone');
 });
 
-if(!isMobile.iOS()){
-$("#geocoder").keydown(function() {
+jQuery( document ).ready(function() {
+       if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+            $("#geocoder").keydown(function() {
 $('.next.button').removeClass('gone');
 
 });
-};
+	} else {
+              // NO IOS Device.         
+        }
+});
+
+
 $("#geocoder").on('select', function () {
-  // $('.next.button').trigger('tap');
-var ele = document.getElementById('triggerTap');
-var click_ev = document.createEvent("MouseEvent");
-click_ev.initEvent("click", false /* bubble */, true /* cancelable */);
-ele.dispatchEvent(click_ev);
+ $('.next.button').trigger('tap');
+
   console.log("tapped");
 });
 
