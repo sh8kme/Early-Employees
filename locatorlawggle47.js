@@ -274,20 +274,25 @@ map.addControl(new mapboxgl.NavigationControl());
             map.resize();
         });
        map.on('idle', () => {
-        
+         $('#listings').addClass('listload');
              $("#listings .item:first").before( $( ".item.exclusive" ) );
            if(!$('.item.active').length){
                $('.no-results').addClass('display');
            }
 	       
-	     $('.no-results').removeClass('display');
-            $('.map').css("visibility","visible");   
+	     
 	       
 	       
  if(!$('.active-d').length){
+	  $('#listings').removeClass('listload');
               $('.no-results').addClass('display');
             $('.map').css("visibility","hidden");
-        } 
+	  $('#listings').removeClass('listload');
+        } else {
+		 $('.no-results').removeClass('display');
+            $('.map').css("visibility","visible");  
+		$('#listings').removeClass('listload');
+	}
 
 	      
   console.log('idle');
