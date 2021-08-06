@@ -276,13 +276,19 @@ map.addControl(new mapboxgl.NavigationControl());
        map.on('idle', () => {
         
              $("#listings .item:first").before( $( ".item.exclusive" ) );
-           if(!$('.item.active-d').length){
+           if(!$('.item.active').length){
                $('.no-results').addClass('display');
            }
-	       //  if(!$('.active-d').length){
-              // $('.no-results').addClass('display');
-			// $('.map').css("visibility","hidden");
-         //  }
+	       geocoder.on('result', function (e) {
+	      if(!$('.active-d').length){
+              $('.no-results').addClass('display');
+			$('.map').css("visibility","hidden");
+        }
+	       
+	       }
+
+
+	      
   console.log('idle');
 });
       
