@@ -283,16 +283,16 @@ map.addControl(new mapboxgl.NavigationControl());
 	     
 	       
 	       
- if(!$('.active-d').length){
+ //if(!$('.active-d').length){
 	 
-              $('.no-results').addClass('display');
-            $('.map').css("visibility","hidden");
-	  $('.listload').css("visibility","hidden"); 
-        } else {
-		 $('.no-results').removeClass('display');
-            $('.map').css("visibility","visible");  
-		 $('.listload').css("visibility","hidden"); 
-	}
+           //   $('.no-results').addClass('display');
+          //  $('.map').css("visibility","hidden");
+	 // $('.listload').css("visibility","hidden"); 
+     //   } else {
+		// $('.no-results').removeClass('display');
+         //   $('.map').css("visibility","visible");  
+		// $('.listload').css("visibility","hidden"); 
+	//}
 
 	      
   console.log('idle');
