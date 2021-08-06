@@ -276,7 +276,7 @@ map.addControl(new mapboxgl.NavigationControl());
        map.on('idle', () => {
         
              $("#listings .item:first").before( $( ".item.exclusive" ) );
-           if(!$('.item.active').length){
+           if(!$('.item.active-d').length){
                $('.no-results').addClass('display');
            }
 	       //  if(!$('.active-d').length){
