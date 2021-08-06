@@ -279,7 +279,7 @@ map.addControl(new mapboxgl.NavigationControl());
            if(!$('.item.active').length){
                $('.no-results').addClass('display');
            }
-	         if(!$('.item.active.active-d').length){
+	         if(!$('.active-d').length){
                $('.no-results').addClass('display');
 			 $('.map').css("visibility","hidden");
            }
