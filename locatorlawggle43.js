@@ -285,7 +285,7 @@ map.addControl(new mapboxgl.NavigationControl());
 			$('.map').css("visibility","hidden");
         }
 	       
-	       }
+	       });
 
 
 	      
