@@ -279,18 +279,20 @@ map.addControl(new mapboxgl.NavigationControl());
            if(!$('.item.active').length){
                $('.no-results').addClass('display');
            }
-	       geocoder.on('result', function (e) {
-	      if(!$('.active-d').length){
-              $('.no-results').addClass('display');
-			$('.map').css("visibility","hidden");
-        }
 	       
-	       });
 
 
 	      
   console.log('idle');
 });
+	    
+	geocoder.on('result', function (e) {
+	      if(!$('.active-d').length){
+              $('.no-results').addClass('display');
+			$('.map').css("visibility","hidden");
+        }
+	});    
+	    
       
     });
 
