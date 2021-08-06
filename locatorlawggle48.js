@@ -284,14 +284,14 @@ map.addControl(new mapboxgl.NavigationControl());
 	       
 	       
  if(!$('.active-d').length){
-	  $('#listings').removeClass('listload');
+	 
               $('.no-results').addClass('display');
             $('.map').css("visibility","hidden");
-	  $('#listings').removeClass('listload');
+	  $('.listload').css("visibility","hidden"); 
         } else {
 		 $('.no-results').removeClass('display');
             $('.map').css("visibility","visible");  
-		$('#listings').removeClass('listload');
+		 $('.listload').css("visibility","hidden"); 
 	}
 
 	      
