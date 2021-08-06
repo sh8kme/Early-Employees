@@ -280,13 +280,14 @@ map.addControl(new mapboxgl.NavigationControl());
                $('.no-results').addClass('display');
            }
 	       
+	     $('.no-results').removeClass('display');
+            $('.map').css("visibility","visible");   
+	       
+	       
  if(!$('.active-d').length){
               $('.no-results').addClass('display');
             $('.map').css("visibility","hidden");
-        } else {
-		 $('.no-results').removeClass('display');
-            $('.map').css("visibility","visible");
-	}
+        } 
 
 	      
   console.log('idle');
