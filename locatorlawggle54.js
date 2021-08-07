@@ -281,10 +281,7 @@ map.addControl(new mapboxgl.NavigationControl());
            }
 	       
 	     
-	       if (!$(".item").hasClass('active-d')) { $('.no-results').addClass('display');  $('.map-wrap').css("visibility","hidden");};
-if ($(".item").hasClass('active-d')) {console.log('yes sir');};
-	       
- //if(!$('.active-d').length){
+//if(!$('.active-d').length){
 	 
            //   $('.no-results').addClass('display');
           //  $('.map').css("visibility","hidden");
