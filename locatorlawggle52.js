@@ -276,12 +276,13 @@ map.addControl(new mapboxgl.NavigationControl());
        map.on('idle', () => {
         
              $("#listings .item:first").before( $( ".item.exclusive" ) );
-           if(!$('.item.active-d').length){
+           if(!$('.item.active').length){
                $('.no-results').addClass('display');
            }
 	       
 	     
-	       
+	       if (!$(".item").hasClass('active-d')) {console.log('no sir');};
+if ($(".item").hasClass('active-d')) {console.log('yes sir');};
 	       
  //if(!$('.active-d').length){
 	 
