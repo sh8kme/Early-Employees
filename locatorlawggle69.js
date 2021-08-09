@@ -285,7 +285,7 @@ map.addControl(new mapboxgl.NavigationControl());
     (
         (elem) ? 
         $('.listload').addClass('load-hidden')  :
-        $('.no-results').addClass('display');
+        $('.no-results').addClass('display')
     )
 })(); 
 	       
