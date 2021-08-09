@@ -276,21 +276,15 @@ map.addControl(new mapboxgl.NavigationControl());
        map.on('idle', () => {
         
              $("#listings .item:first").before( $( ".item.exclusive" ) );
-          // if(!$('.item.active').length){
-              // $('.no-results').addClass('display');
-         //  }
+        if(!$('.item.active').length){
+              $('.no-results').addClass('display');
+          }
 	       
 	     (()=> {
     var elem = document.querySelector('.active-d');  
-    (
-        (elem) ? 
-	    $('.no-results').removeClass('display') :
-	    $('.no-results').addClass('display')
-	    
-       // console.log(elem+' was found.') :
-       // console.log('not found')
-    )
-		     
+  	       if(!$('.item.active-d').length){
+              $('.no-results').addClass('display');
+          }
 		     
 })();
 	   
