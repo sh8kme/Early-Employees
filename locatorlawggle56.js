@@ -284,8 +284,10 @@ map.addControl(new mapboxgl.NavigationControl());
     var elem = document.querySelector('.active-d');  
     (
         (elem) ? 
-        console.log(elem+' was found.') :
-        console.log('not found')
+	    $('.map').css("visibility","visible") :
+	    $('.map').css("visibility","hidden")
+       // console.log(elem+' was found.') :
+       // console.log('not found')
     )
 })();
 	       
