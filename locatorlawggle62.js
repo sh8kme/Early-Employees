@@ -274,7 +274,7 @@ map.addControl(new mapboxgl.NavigationControl());
             map.resize();
         });
        map.on('idle', () => {
-        
+         $('.no-results').removeClass('display');
              $("#listings .item:first").before( $( ".item.exclusive" ) );
            if(!$('.item.active').length){
                $('.no-results').addClass('display');
@@ -293,6 +293,7 @@ map.addControl(new mapboxgl.NavigationControl());
 		     
 		     
 })();
+	   
 	       
 //if(!$('.active-d').length){
 	 
