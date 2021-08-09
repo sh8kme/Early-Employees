@@ -280,7 +280,14 @@ map.addControl(new mapboxgl.NavigationControl());
               $('.no-results').addClass('display');
           }
 	   
-	   
+	  (()=> {
+    var elem = document.querySelector('.active-d');  
+    (
+        (elem) ? 
+        $('.listload').addClass('load-hidden')  :
+        $('.no-results').addClass('display');
+    )
+})(); 
 	       
 //if(!$('.active-d').length){
 	 
