@@ -279,14 +279,7 @@ map.addControl(new mapboxgl.NavigationControl());
         if(!$('.item.active').length){
               $('.no-results').addClass('display');
           }
-	       
-	     (()=> {
-    var elem = document.querySelector('.active-d');  
-  	       if(!$('.item.active-d').length){
-              $('.no-results').addClass('display');
-          }
-		     
-})();
+	   
 	   
 	       
 //if(!$('.active-d').length){
