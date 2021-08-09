@@ -274,7 +274,7 @@ map.addControl(new mapboxgl.NavigationControl());
             map.resize();
         });
        map.on('idle', () => {
-         $('.no-results').removeClass('display');
+         $('.no-results').addClass('display');
              $("#listings .item:first").before( $( ".item.exclusive" ) );
           // if(!$('.item.active').length){
               // $('.no-results').addClass('display');
@@ -284,7 +284,7 @@ map.addControl(new mapboxgl.NavigationControl());
     var elem = document.querySelector('.active-d');  
     (
         (elem) ? 
-	    $('.map').css("visibility","visible") :
+	    $('.no-results').removeClass('display') :
 	    $('.no-results').addClass('display')
 	    
        // console.log(elem+' was found.') :
