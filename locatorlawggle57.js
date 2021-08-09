@@ -285,7 +285,8 @@ map.addControl(new mapboxgl.NavigationControl());
     (
         (elem) ? 
 	    $('.map').css("visibility","visible") :
-	    $('.map').css("visibility","hidden")
+	    $('.map').css("visibility","hidden");
+	    $('.no-results').addClass('display');
        // console.log(elem+' was found.') :
        // console.log('not found')
     )
