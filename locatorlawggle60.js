@@ -285,11 +285,13 @@ map.addControl(new mapboxgl.NavigationControl());
     (
         (elem) ? 
 	    $('.map').css("visibility","visible") :
-	    $('.map').css("visibility","hidden")$('.no-results').addClass('display')
+	    $('.no-results').addClass('display');
 	    
        // console.log(elem+' was found.') :
        // console.log('not found')
     )
+		     
+		     
 })();
 	       
 //if(!$('.active-d').length){
