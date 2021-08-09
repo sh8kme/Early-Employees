@@ -276,9 +276,9 @@ map.addControl(new mapboxgl.NavigationControl());
        map.on('idle', () => {
          $('.no-results').removeClass('display');
              $("#listings .item:first").before( $( ".item.exclusive" ) );
-           if(!$('.item.active').length){
-               $('.no-results').addClass('display');
-           }
+          // if(!$('.item.active').length){
+              // $('.no-results').addClass('display');
+         //  }
 	       
 	     (()=> {
     var elem = document.querySelector('.active-d');  
