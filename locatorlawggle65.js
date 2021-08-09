@@ -274,7 +274,7 @@ map.addControl(new mapboxgl.NavigationControl());
             map.resize();
         });
        map.on('idle', () => {
-         $('.no-results').addClass('display');
+        
              $("#listings .item:first").before( $( ".item.exclusive" ) );
           // if(!$('.item.active').length){
               // $('.no-results').addClass('display');
