@@ -287,7 +287,7 @@ map.addControl(new mapboxgl.NavigationControl());
 			
    
           } else {
-		   //$(".no-results").addClass("display");
+		   $(".no-results").addClass("display");
 			
 		$('.map').css("visibility","hidden");
 	  }
@@ -317,7 +317,7 @@ map.addControl(new mapboxgl.NavigationControl());
 
 	       
   console.log('idle');
-	       $('.listload').css("visibility","hidden"); 
+	       $('.listload').css("visibility","hidden").delay(2000); 
 });
 	    
 	
