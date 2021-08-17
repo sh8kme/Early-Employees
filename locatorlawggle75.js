@@ -284,10 +284,7 @@ map.addControl(new mapboxgl.NavigationControl());
 		
 		
 			
-			  if (document.querySelector('.active-d') == null) {
-    $(".no-results").css("display", "block");
-		
-          }
+			
 	}   
 	
 	       
@@ -302,7 +299,10 @@ map.addControl(new mapboxgl.NavigationControl());
 		// $('.listload').css("visibility","hidden"); 
 	//}
 
-	      
+	        if (document.querySelector('.active-d') == null) {
+    $(".no-results").css("display", "block");
+		
+          }
   console.log('idle');
 });
 	    
