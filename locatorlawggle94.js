@@ -389,7 +389,7 @@ $('.next.button').removeClass('gone');
 
 $("#geocoder").on('select', function () {
  $('.next.button').trigger('tap');
-
+ $('.listload').css("visibility","visible"); 
   console.log("tapped");
 });
 
