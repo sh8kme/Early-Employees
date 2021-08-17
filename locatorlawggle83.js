@@ -278,6 +278,22 @@ map.addControl(new mapboxgl.NavigationControl());
         });
        map.on('idle', () => {
         $('.listload').css("visibility","visible"); 
+	       
+	        if (document.querySelector('.active-d') !== null) {
+			  $(".no-results").css("display", "hidden"); 
+		  $('.listload').css("visibility","hidden"); 
+		 
+		  $('.map').css("visibility","visible"); 
+			
+   
+          } else {
+		   $(".no-results").css("display", "none");
+			$('.listload').css("visibility","block"); 
+		$('.map').css("visibility","hidden");
+	  }
+	       
+	       
+	       
              $("#listings .item:first").before( $( ".item.exclusive" ) );
         if(!$('.item.active').length){
               $('.no-results').addClass('display');
@@ -299,18 +315,7 @@ map.addControl(new mapboxgl.NavigationControl());
 		// $('.listload').css("visibility","hidden"); 
 	//}
 
-	        if (document.querySelector('.active-d') !== null) {
-			  $(".no-results").css("display", "none"); 
-		  $('.listload').css("visibility","hidden"); 
-		 
-		  $('.map').css("visibility","visible"); 
-			
-   
-          } else {
-		   $(".no-results").css("display", "block");
-			$('.listload').css("visibility","hidden"); 
-		$('.map').css("visibility","hidden");
-	  }
+	       
   console.log('idle');
 });
 	    
