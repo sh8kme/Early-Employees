@@ -228,6 +228,13 @@ map.addControl(new mapboxgl.NavigationControl());
                             '<a href="profile?profile=' + prop.mid + '" target="_blank" class="blue l-profile-link">View Profile &#10230;</a>';
                     
                    }
+			
+			
+			  if (document.querySelector('.active-d') !== null) {
+    $(".no-results").css("display", "block");
+}
+			
+			
                 
                 }
                 link.addEventListener('click', function(e) {
