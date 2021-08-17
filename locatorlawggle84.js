@@ -280,15 +280,15 @@ map.addControl(new mapboxgl.NavigationControl());
         $('.listload').css("visibility","visible"); 
 	       
 	        if (document.querySelector('.active-d') !== null) {
-			  $(".no-results").css("display", "hidden"); 
+			  $(".no-results").css("display", "none"); 
 		  $('.listload').css("visibility","hidden"); 
 		 
 		  $('.map').css("visibility","visible"); 
 			
    
           } else {
-		   $(".no-results").css("display", "none");
-			$('.listload').css("visibility","block"); 
+		   $(".no-results").css("display", "block");
+			$('.listload').css("visibility","hidden"); 
 		$('.map').css("visibility","hidden");
 	  }
 	       
