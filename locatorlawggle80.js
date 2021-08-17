@@ -299,15 +299,17 @@ map.addControl(new mapboxgl.NavigationControl());
 		// $('.listload').css("visibility","hidden"); 
 	//}
 
-	        if (document.querySelector('.active-d') == null) {
-    $(".no-results").css("display", "block");
-			$('.listload').css("visibility","hidden"); 
-		$('.map').css("visibility","hidden");
-          } else {
-		   $(".no-results").css("display", "none"); 
+	        if (document.querySelector('.active-d') !== null) {
+			  $(".no-results").css("display", "none"); 
 		  $('.listload').css("visibility","hidden"); 
 		 
-		  $('.map').css("visibility","visible");  
+		  $('.map').css("visibility","visible"); 
+			
+   
+          } else {
+		   $(".no-results").css("display", "block");
+			$('.listload').css("visibility","hidden"); 
+		$('.map').css("visibility","hidden");
 	  }
   console.log('idle');
 });
