@@ -301,7 +301,7 @@ map.addControl(new mapboxgl.NavigationControl());
 		
 			
 			
-	}   
+	//}   
 	
 	       
 //if(!$('.active-d').length){
