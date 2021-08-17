@@ -277,7 +277,7 @@ map.addControl(new mapboxgl.NavigationControl());
             map.resize();
         });
        map.on('idle', () => {
-        
+        $('.listload').css("visibility","visible"); 
              $("#listings .item:first").before( $( ".item.exclusive" ) );
         if(!$('.item.active').length){
               $('.no-results').addClass('display');
@@ -298,7 +298,7 @@ map.addControl(new mapboxgl.NavigationControl());
          //   $('.map').css("visibility","visible");  
 		// $('.listload').css("visibility","hidden"); 
 	//}
-$('.listload').css("visibility","visible"); 
+
 	        if (document.querySelector('.active-d') !== null) {
 			  $(".no-results").css("display", "none"); 
 		  $('.listload').css("visibility","hidden"); 
