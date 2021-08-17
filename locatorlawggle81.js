@@ -298,7 +298,7 @@ map.addControl(new mapboxgl.NavigationControl());
          //   $('.map').css("visibility","visible");  
 		// $('.listload').css("visibility","hidden"); 
 	//}
-
+$('.listload').css("visibility","visible"); 
 	        if (document.querySelector('.active-d') !== null) {
 			  $(".no-results").css("display", "none"); 
 		  $('.listload').css("visibility","hidden"); 
