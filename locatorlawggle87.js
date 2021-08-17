@@ -281,14 +281,14 @@ map.addControl(new mapboxgl.NavigationControl());
 	       
 	        if (document.querySelector('.active-d') !== null) {
 			  $(".no-results").css("display", "none"); 
-		  $('.listload').css("visibility","hidden"); 
+		 // $('.listload').css("visibility","hidden"); 
 		 
 		  $('.map').css("visibility","visible"); 
 			
    
           } else {
 		   $(".no-results").css("display", "block");
-			$('.listload').css("visibility","hidden"); 
+			
 		$('.map').css("visibility","hidden");
 	  }
 	       
@@ -317,6 +317,7 @@ map.addControl(new mapboxgl.NavigationControl());
 
 	       
   console.log('idle');
+	       $('.listload').css("visibility","hidden"); 
 });
 	    
 	
