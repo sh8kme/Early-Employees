@@ -230,10 +230,6 @@ map.addControl(new mapboxgl.NavigationControl());
                    }
 			
 			
-			  if (document.querySelector('.active-d') !== null) {
-    $(".no-results").css("display", "block");
-}
-			
 			
                 
                 }
@@ -285,6 +281,12 @@ map.addControl(new mapboxgl.NavigationControl());
              $("#listings .item:first").before( $( ".item.exclusive" ) );
         if(!$('.item.active').length){
               $('.no-results').addClass('display');
+		
+		
+			
+			  if (document.querySelector('.active-d') !== null) {
+    $(".no-results").css("display", "block");
+		
           }
 	   
 	
