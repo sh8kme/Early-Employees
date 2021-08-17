@@ -287,9 +287,9 @@ map.addControl(new mapboxgl.NavigationControl());
 			
    
           } else {
-		   $(".no-results").addClass("display").delay(2000);
+		   //$(".no-results").addClass("display");
 			
-		$('.map').css("visibility","hidden").delay(2000);
+		$('.map').css("visibility","hidden");
 	  }
 	       
 	       
