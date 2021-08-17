@@ -304,8 +304,9 @@ map.addControl(new mapboxgl.NavigationControl());
 			$('.listload').css("visibility","hidden"); 
 		$('.map').css("visibility","hidden");
           } else {
+		   $(".no-results").css("display", "none"); 
 		  $('.listload').css("visibility","hidden"); 
-		  $(".no-results").css("display", "none"); 
+		 
 		  $('.map').css("visibility","visible");  
 	  }
   console.log('idle');
