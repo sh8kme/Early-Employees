@@ -301,9 +301,11 @@ map.addControl(new mapboxgl.NavigationControl());
 
 	        if (document.querySelector('.active-d') == null) {
     $(".no-results").css("display", "block");
-		
+		$('.map').css("visibility","hidden");
           } else {
-		  $(".no-results").css("display", "none");  
+		  $('.listload').css("visibility","hidden"); 
+		  $(".no-results").css("display", "none"); 
+		  $('.map').css("visibility","visible");  
 	  }
   console.log('idle');
 });
