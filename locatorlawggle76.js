@@ -302,7 +302,9 @@ map.addControl(new mapboxgl.NavigationControl());
 	        if (document.querySelector('.active-d') == null) {
     $(".no-results").css("display", "block");
 		
-          }
+          } else {
+		  $(".no-results").css("display", "none");  
+	  }
   console.log('idle');
 });
 	    
