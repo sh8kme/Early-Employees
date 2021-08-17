@@ -294,9 +294,9 @@ map.addControl(new mapboxgl.NavigationControl());
 	       
 	       
 	       
-             $("#listings .item:first").before( $( ".item.exclusive" ) );
-        if(!$('.item.active').length){
-              $('.no-results').addClass('display');
+           //  $("#listings .item:first").before( $( ".item.exclusive" ) );
+       // if(!$('.item.active').length){
+        //      $('.no-results').addClass('display');
 		
 		
 			
