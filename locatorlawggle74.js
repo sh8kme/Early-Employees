@@ -284,7 +284,7 @@ map.addControl(new mapboxgl.NavigationControl());
 		
 		
 			
-			  if (document.querySelector('.active-d') !== null) {
+			  if (document.querySelector('.active-d') == null) {
     $(".no-results").css("display", "block");
 		
           }
