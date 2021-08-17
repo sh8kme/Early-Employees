@@ -278,16 +278,16 @@ map.addControl(new mapboxgl.NavigationControl());
         });
        map.on('idle', () => {
         $('.listload').css("visibility","visible"); 
-	       $(".no-results").css("display", "none"); 
+	       $(".no-results").removeClass("display");
 	        if (document.querySelector('.active-d') !== null) {
-			  $(".no-results").css("display", "none"); 
+			  $(".no-results").removeClass("display");
 		 // $('.listload').css("visibility","hidden"); 
 		 
 		  $('.map').css("visibility","visible"); 
 			
    
           } else {
-		   $(".no-results").css("display", "block");
+		   $(".no-results").addClass("dicplay");
 			
 		$('.map').css("visibility","hidden");
 	  }
