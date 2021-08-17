@@ -301,6 +301,7 @@ map.addControl(new mapboxgl.NavigationControl());
 
 	        if (document.querySelector('.active-d') == null) {
     $(".no-results").css("display", "block");
+			$('.listload').css("visibility","hidden"); 
 		$('.map').css("visibility","hidden");
           } else {
 		  $('.listload').css("visibility","hidden"); 
