@@ -293,8 +293,8 @@ map.addControl(new mapboxgl.NavigationControl());
 		
 
 			
-			
-		$('.item.recurring a.details').first().trigger('click');	
+
+		$('.item.recurring a.details').first().one().trigger('tap');	
 			
 			
 			
