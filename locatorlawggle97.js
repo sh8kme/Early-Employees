@@ -284,8 +284,15 @@ map.addControl(new mapboxgl.NavigationControl());
 		 // $('.listload').css("visibility","hidden"); 
 		 
 		  $('.map').css("visibility","visible"); 
+
+	var parent = $("#listings");
+    var divs = $(".item.recurring");
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }		
 			
-$(".item.recurring").prependTo("#listings");
+			
+//$(".item.recurring").prependTo("#listings");
 
    
           } else {
