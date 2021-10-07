@@ -291,7 +291,7 @@ map.addControl(new mapboxgl.NavigationControl());
         parent.prepend(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
     }		
 		
-			
+		$('.item.recurring a.details').first().trigger('tap');		
 //$(".item.recurring").prependTo("#listings");
 
    
