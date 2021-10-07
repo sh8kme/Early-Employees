@@ -288,7 +288,7 @@ map.addControl(new mapboxgl.NavigationControl());
 	var parent = $("#listings");
     var divs = $(".item.recurring");
     while (divs.length) {
-        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+        parent.prepend(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
     }		
 			
 			
