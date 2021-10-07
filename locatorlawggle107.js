@@ -289,9 +289,8 @@ map.addControl(new mapboxgl.NavigationControl());
     var divs = $(".item.recurring");
     while (divs.length) {
         parent.prepend(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
-	    $('.item.recurring:first-child a').trigger('tap');
     }		
-			
+		
 			
 //$(".item.recurring").prependTo("#listings");
 
@@ -327,7 +326,8 @@ map.addControl(new mapboxgl.NavigationControl());
 
 	       
   console.log('idle');
-	       $('.listload').css("visibility","hidden").delay(2000); 
+	       $('.listload').css("visibility","hidden").delay(2000);
+	       $('.item.recurring:first-child a').trigger('tap');	
 });
 	    
 	
