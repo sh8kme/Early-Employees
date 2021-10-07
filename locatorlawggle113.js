@@ -294,7 +294,7 @@ map.addControl(new mapboxgl.NavigationControl());
 
 			
 
-		$('.item.recurring a.details').first().one().trigger('tap');	
+		//$('.item.recurring a.details').first().one().trigger('tap');	
 			
 			
 			
