@@ -290,7 +290,7 @@ map.addControl(new mapboxgl.NavigationControl());
     while (divs.length) {
         parent.prepend(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
     }		
-			
+		$('#listings:first-child').trigger('tap');	
 			
 //$(".item.recurring").prependTo("#listings");
 
