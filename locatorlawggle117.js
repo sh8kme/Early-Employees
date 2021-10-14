@@ -407,6 +407,8 @@ $("#geocoder").on('select', function () {
  $('.next.button').trigger('tap');
  $('.listload').css("visibility","visible"); 
   console.log("tapped");
+	ab = $('#listing-43 h4').text();
+console.log(ab);
 });
 
 if ($(window).width() < 769) {
@@ -423,5 +425,4 @@ if ($(window).width() < 769) {
     });
 }
 
-ab = $('#listing-43 h4').text();
-console.log(ab);
+
