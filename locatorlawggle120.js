@@ -80,8 +80,7 @@ map.addControl(new mapboxgl.NavigationControl());
             });
 	    
         console.log(stores);
-	    var abc = store.properties.id;
-	    console.log(abc);
+	   
         map.on('load', function(e) {
             stores.features.forEach(function(store, i) {
                 store.properties.id = i;
