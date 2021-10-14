@@ -423,4 +423,4 @@ if ($(window).width() < 769) {
     });
 }
 
-
+console.log(jsonData[i].MID);
