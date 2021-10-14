@@ -79,7 +79,9 @@ map.addControl(new mapboxgl.NavigationControl());
                 }
             });
 	    
-        console.log(stores)
+        console.log(stores);
+	    var abc = store.properties.id;
+	    console.log(abc);
         map.on('load', function(e) {
             stores.features.forEach(function(store, i) {
                 store.properties.id = i;
@@ -407,8 +409,7 @@ $("#geocoder").on('select', function () {
  $('.next.button').trigger('tap');
  $('.listload').css("visibility","visible"); 
   console.log("tapped");
-	ab = $('#listing-43 h4').text();
-console.log(ab);
+	
 });
 
 if ($(window).width() < 769) {
