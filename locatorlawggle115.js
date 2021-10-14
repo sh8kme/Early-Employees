@@ -78,7 +78,7 @@ map.addControl(new mapboxgl.NavigationControl());
                     "address": jsonData[i].Address
                 }
             });
-	    var window.spros = stores;
+	    
         console.log(stores)
         map.on('load', function(e) {
             stores.features.forEach(function(store, i) {
