@@ -423,4 +423,5 @@ if ($(window).width() < 769) {
     });
 }
 
-console.log(jsonData[i].MID);
+ab = $('#listing-43 h4').text();
+console.log(ab);
