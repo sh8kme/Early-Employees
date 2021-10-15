@@ -335,7 +335,7 @@ map.addControl(new mapboxgl.NavigationControl());
 	       
   console.log('idle');
 	       $('.listload').css("visibility","hidden").delay(2000);
-	       $('#listings').addClass('s-build');
+	       $('.footer').addClass('s-build');
 });
 	    
 	
