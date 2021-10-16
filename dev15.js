@@ -440,3 +440,39 @@ if ($(window).width() < 769) {
         $('#listings').show();
     });
 }
+
+
+$('.slist').slick({
+  slide: '.s-item',
+  dots: false,
+  speed: 700,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  touchThreshold: 100,
+  responsive: [
+    {
+      // landscape
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      // mobile portrait
+      breakpoint: 479,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
+$('.slider-prev').click(function(){
+    $(".slist").slick('slickPrev');
+});
+
+$('.slider-next').click(function(){
+    $(".slist").slick('slickNext');
+});
