@@ -192,7 +192,7 @@ map.addControl(new mapboxgl.NavigationControl());
 	
 	 function buildSwipeList(data) {
             data.features.forEach(function(store, i) {
-	    console.log('store.properties.name');
+	    console.log(store.properties.name);
 	    });
 	    }
 	
