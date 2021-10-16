@@ -198,7 +198,7 @@ map.addControl(new mapboxgl.NavigationControl());
 		var swiper = document.getElementsByClassName('slick-track')[0]; 
 		var swipe = swiper.appendChild(document.createElement('div'));   
 		    swipe.id = "profile-" + prof.id;
-		    swipe.className = 'prof active active-c';
+		    swipe.className = 's-item slick-slide active active-c';
 	    });
 	}
 	
