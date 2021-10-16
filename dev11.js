@@ -191,7 +191,7 @@ map.addControl(new mapboxgl.NavigationControl());
         }
 	
 	
-	function buildLocationList(data) {
+	function buildSwipeList(data) {
             data.features.forEach(function(store, i) {
 		var swiper = document.getElementsByClassName('slick-track')[0]; 
 		var swipe = swiper.appendChild(document.createElement('div'));   
