@@ -192,62 +192,7 @@ map.addControl(new mapboxgl.NavigationControl());
         }
 	
 	
-	function buildSwipeList(data) {
-            data.features.forEach(function(store, i) {
-		var prof = store.properties;    
-		var swiper = document.getElementsByClassName('slist')[0]; 
-		var swipe = swiper.appendChild(document.createElement('div'));   
-		    swipe.id = "profile-" + prof.id;
-		    swipe.className = 's-item active active-c';
-		      var profile = swipe.appendChild(document.createElement('div'));
-		  profile.innerHTML = '<div class="columns-8 w-row"><div class="s-profile-image w-col w-col-6" style="background-image: url(' + prof.image + ')" ></div><div class="column-18 w-col w-col-6"><div class="s-details"><div class="s-profile-heading">' + prof.name +' ' + prof.lastname + ',<span class="s-type-law">' + prof.type + '</span></div><div>' + prof.firm +'</div><div class="s-distance"><img src="https://uploads-ssl.webflow.com/5e5dd661bbf5f1863333707a/5e851a1cf6f6eda0543cecfe_mapbox-icon.png" loading="lazy" width="30" alt="map checkpoint" class="s-icon"><div>21 Km Away</div></div><div class="s-secondary-heading">Practice Areas:</div><a href="#" class="tag s-tag w-button" tabindex="0">Personal INjury</a><a href="#" class="tag s-tag w-button" tabindex="0">Personal INjury</a><a href="#" class="tag s-tag w-button" tabindex="0">Personal INjury</a><div class="s-secondary-heading">Languages:</div><a href="#" class="tag s-tag w-button" tabindex="0">Personal INjury</a><a href="#" class="tag s-tag w-button" tabindex="0">Personal INjury</a></div></div></div></div><div class="s-icons"><div class="s-icon-wrap"><img src="https://uploads-ssl.webflow.com/5e5dd661bbf5f1863333707a/6164c27001a1314d303348df_micon.svg" loading="lazy" width="40" alt="" class="s-map"></div><div class="s-icon-wrap"><img src="https://uploads-ssl.webflow.com/5e5dd661bbf5f1863333707a/6164c280a1c7f55f931c37b0_cicon.svg" loading="lazy" width="40" alt="" class="s-chat"></div></div><div class="s-bio-wrap"><div class="s-secondary-heading">Bio:</div><p class="paragraph">' + prof.profile +'</p><div class="social-links-container s-bio"><a href="https://www.instagram.com/lawggle/" target="_blank" class="social-block w-inline-block" tabindex="0"><img src="https://uploads-ssl.webflow.com/5e5dd661bbf5f1863333707a/615f3768d91e4184e98914bc_instagram1.svg" alt="" class="social-icon"></a><a href="https://twitter.com/Lawggle" target="_blank" class="social-block w-inline-block" tabindex="0"><img src="https://uploads-ssl.webflow.com/5e5dd661bbf5f1863333707a/5ff60355c347a0de7ee9767f_twitter1.svg" alt="Twitter logo" class="social-icon"></a><a href="https://www.facebook.com/Lawggle" target="_blank" class="social-block w-inline-block" tabindex="0"><img src="https://uploads-ssl.webflow.com/5e5dd661bbf5f1863333707a/5ff60373c2c2b851a8f9368c_facebook1.svg" alt="Facebook Logo" class="social-icon"></a><a href="https://www.linkedin.com/company/71113889" target="_blank" class="social-block w-inline-block" tabindex="0"><img src="https://uploads-ssl.webflow.com/5e5dd661bbf5f1863333707a/5ff6038b5e4963165877455b_linkedin1.svg" alt="LinkedIn Logo" class="social-icon"></a></div>';
-	   
-	     if (prof.distance) {
-                    var roundedDistance = Math.round(prof.distance * 100) / 100;
-                   if (roundedDistance < 100) {
-			console.log('blahhhh');   
-		   }
-	     }
-	    });
-		
-		
-		$('.slist').slick({
-  slide: '.s-item',
-  dots: false,
-  speed: 700,
-  infinite: false,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  touchThreshold: 100,
-  responsive: [
-    {
-      // landscape
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    {
-      // mobile portrait
-      breakpoint: 479,
-      settings: {
-        slidesToShow: 1
-      }
-    }
-  ]
-});
-
-$('.slider-prev').click(function(){
-    $(".slist").slick('slickPrev');
-});
-
-$('.slider-next').click(function(){
-    $(".slist").slick('slickNext');
-});
-
-		
-	}
+	
 	
 
         function buildLocationList(data) {
