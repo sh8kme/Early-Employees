@@ -200,9 +200,7 @@ map.addControl(new mapboxgl.NavigationControl());
 		    swipe.id = "profile-" + prof.id;
 		    swipe.className = 's-item active active-c';
 		      var profile = swipe.appendChild(document.createElement('div'));
-		    profile.innerHTML = '<div class="columns-8 w-row">';
-		    profile.innerHTML += '<div class="s-profile-image w-col w-col-6" style="background-image: url(' + prof.image + ')" ><div class="column-18 w-col w-col-6"><div class="s-details">';
-		    profile.innerHTML += '<div class="s-profile-heading">Lawyer Name, <span class="s-type-law">Lawyer</span></div><div>Company LLC</div><div class="s-distance">';
+		    profile.innerHTML = '<div class="columns-8 w-row"><div class="s-profile-image w-col w-col-6" style="background-image: url(' + prof.image + ')" ><div class="column-18 w-col w-col-6"><div class="s-details"><div class="s-profile-heading">Lawyer Name, <span class="s-type-law">Lawyer</span></div><div>Company LLC</div><div class="s-distance">';
 	    });
 		
 		
