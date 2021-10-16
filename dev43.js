@@ -100,7 +100,7 @@ map.addControl(new mapboxgl.NavigationControl());
             document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
           $(".loader").hide();
              buildLocationList(stores);
-             buildSwipeList(stores);
+            
              addMarkers();
  
             geocoder.on('result', function(ev) {
