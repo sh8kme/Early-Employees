@@ -80,11 +80,7 @@ map.addControl(new mapboxgl.NavigationControl());
             });
 	    
         console.log(stores);
-	    //function buildSwipeList(data) {
-            data.features.forEach(function(store, i) {
-	    console.log(store.properties.name);
-	    });
-	   // }
+	  
 	    
         map.on('load', function(e) {
             stores.features.forEach(function(store, i) {
@@ -202,6 +198,8 @@ map.addControl(new mapboxgl.NavigationControl());
             data.features.forEach(function(store, i) {
                 var prop = store.properties;
                 var listings = document.getElementById('listings');
+		var swiper = document.getElementById('slick-track'); 
+		var swipe = swiper.appendChild(document.createElement('div'));   
                 var listing = listings.appendChild(document.createElement('div'));
                 listing.id = "listing-" + prop.id;
                 listing.className = 'item active active-c';
