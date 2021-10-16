@@ -207,6 +207,7 @@ map.addControl(new mapboxgl.NavigationControl());
 		$('.slist').slick({
   slide: '.s-item',
   dots: false,
+  vertical: true,
   speed: 700,
   infinite: false,
   slidesToShow: 1,
