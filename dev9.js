@@ -198,7 +198,7 @@ map.addControl(new mapboxgl.NavigationControl());
             data.features.forEach(function(store, i) {
                 var prop = store.properties;
                 var listings = document.getElementById('listings');
-		var swiper = document.getElementsByClassName('slick-track'); 
+		var swiper = document.getElementsByClassName('slick-track')[0]; 
 		var swipe = swiper.appendChild(document.createElement('div'));   
                 var listing = listings.appendChild(document.createElement('div'));
                 listing.id = "listing-" + prop.id;
