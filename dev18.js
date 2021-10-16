@@ -199,7 +199,7 @@ map.addControl(new mapboxgl.NavigationControl());
 		var swipe = swiper.appendChild(document.createElement('div'));   
 		    swipe.id = "profile-" + prof.id;
 		    swipe.className = 's-item active active-c';
-		      var profile = listing.appendChild(document.createElement('div'));
+		      var profile = swipe.appendChild(document.createElement('div'));
 		    profile.innerHTML = '<div class="i-wrap"><img src="' + prof.image + '" class="l-profile"></div>';
 	    });
 	}
