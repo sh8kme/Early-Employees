@@ -130,6 +130,7 @@ map.addControl(new mapboxgl.NavigationControl());
                     listings.removeChild(listings.firstChild);
                 }
                 buildLocationList(stores);
+		    $('.footer-flex-container').addClass('s-build'); 
                 createPopUp(stores.features[0]);
                 var activeListing = document.getElementById('listing-' + stores.features[0].properties.id);
                 activeListing.classList.add('active');
@@ -342,7 +343,7 @@ map.addControl(new mapboxgl.NavigationControl());
 	       
   console.log('idle');
 	       $('.listload').css("visibility","hidden").delay(2000);
-	       $('.footer-flex-container').addClass('s-build');
+	      
 });
 	    
 	
