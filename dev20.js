@@ -198,10 +198,48 @@ map.addControl(new mapboxgl.NavigationControl());
 		var swiper = document.getElementsByClassName('slick-track')[0]; 
 		var swipe = swiper.appendChild(document.createElement('div'));   
 		    swipe.id = "profile-" + prof.id;
-		    swipe.className = 's-item slick-slide active active-c';
+		    swipe.className = 's-item active active-c';
 		      var profile = swipe.appendChild(document.createElement('div'));
 		    profile.innerHTML = '<div class="i-wrap"><img src="' + prof.image + '" class="l-profile"></div>';
 	    });
+		
+		
+		$('.slist').slick({
+  slide: '.s-item',
+  dots: false,
+  speed: 700,
+  infinite: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  touchThreshold: 100,
+  responsive: [
+    {
+      // landscape
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      // mobile portrait
+      breakpoint: 479,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
+$('.slider-prev').click(function(){
+    $(".slist").slick('slickPrev');
+});
+
+$('.slider-next').click(function(){
+    $(".slist").slick('slickNext');
+});
+
+		
 	}
 	
 
@@ -444,37 +482,3 @@ if ($(window).width() < 769) {
 }
 
 
-$('.slist').slick({
-  slide: '.s-item',
-  dots: false,
-  speed: 700,
-  infinite: false,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  touchThreshold: 100,
-  responsive: [
-    {
-      // landscape
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    {
-      // mobile portrait
-      breakpoint: 479,
-      settings: {
-        slidesToShow: 1
-      }
-    }
-  ]
-});
-
-$('.slider-prev').click(function(){
-    $(".slist").slick('slickPrev');
-});
-
-$('.slider-next').click(function(){
-    $(".slist").slick('slickNext');
-});
