@@ -80,7 +80,12 @@ map.addControl(new mapboxgl.NavigationControl());
             });
 	    
         console.log(stores);
-	   
+	    //function buildSwipeList(data) {
+            data.features.forEach(function(store, i) {
+	    console.log(store.properties.name);
+	    });
+	   // }
+	    
         map.on('load', function(e) {
             stores.features.forEach(function(store, i) {
                 store.properties.id = i;
@@ -190,11 +195,7 @@ map.addControl(new mapboxgl.NavigationControl());
         }
 	
 	
-	 function buildSwipeList(data) {
-            data.features.forEach(function(store, i) {
-	    console.log(store.properties.name);
-	    });
-	    }
+	
 	
 
         function buildLocationList(data) {
