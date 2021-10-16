@@ -195,7 +195,7 @@ map.addControl(new mapboxgl.NavigationControl());
 	function buildSwipeList(data) {
             data.features.forEach(function(store, i) {
 		var prof = store.properties;    
-		var swiper = document.getElementsByClassName('s-list')[0]; 
+		var swiper = document.getElementsByClassName('slist')[0]; 
 		var swipe = swiper.appendChild(document.createElement('div'));   
 		    swipe.id = "profile-" + prof.id;
 		    swipe.className = 's-item active active-c';
