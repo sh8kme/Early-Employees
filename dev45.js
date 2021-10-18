@@ -236,7 +236,8 @@ map.addControl(new mapboxgl.NavigationControl());
                             '<p class="l-distance"><strong>' + roundedDistance + ' kms away</strong></p>';
                        details.innerHTML +=
                             '<a href="profile?profile=' + prop.mid + '" target="_blank" class="blue l-profile-link">View Profile &#10230;</a>';
-                    
+                     details.innerHTML +=
+                            '<div class="p-hide"><span class="p-lang">' + prop.language + '</span><span class="p-profi">' + prop.profile + '</span></div>';
                    }
 			
 			
