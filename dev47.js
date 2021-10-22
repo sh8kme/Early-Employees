@@ -422,18 +422,18 @@ $("#geocoder").on('select', function () {
 	
 });
 
-if ($(window).width() < 769) {
+//if ($(window).width() < 769) {
 
-    $('.map-wrap, .map-display').hide();
-    $('#listings').click(function() {
-        console.log('clicked');
-        $('.map-wrap, .map-display').show();
-        $(this).hide();
-    });
-    $('.map-display').click(function() {
-        $('.map-wrap, .map-display').hide();
-        $('#listings').show();
-    });
-}
+   // $('.map-wrap, .map-display').hide();
+   // $('#listings').click(function() {
+     //   console.log('clicked');
+     //   $('.map-wrap, .map-display').show();
+     //   $(this).hide();
+  //  });
+  //  $('.map-display').click(function() {
+    //    $('.map-wrap, .map-display').hide();
+     //   $('#listings').show();
+ //   });
+//}
 
 
