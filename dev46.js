@@ -67,6 +67,7 @@ map.addControl(new mapboxgl.NavigationControl());
                     "firm": jsonData[i].Firm,
                     //"city": jsonData[i].City,
                     "type": jsonData[i]['Type of Pro'],
+		    "area": jsonData[i]['Area of Law'],
                     "image": jsonData[i].Photo,
                     "language": jsonData[i].Language,
                     "email": jsonData[i].Email,
@@ -237,7 +238,7 @@ map.addControl(new mapboxgl.NavigationControl());
                        details.innerHTML +=
                             '<a href="profile?profile=' + prop.mid + '" target="_blank" class="blue l-profile-link">View Profile &#10230;</a>';
                      details.innerHTML +=
-                            '<div class="p-hide"><span class="p-lang">' + prop.language + '</span><span class="p-profi">' + prop.profile + '</span></div>';
+                            '<div class="p-hide"><span class="p-lang">' + prop.language + '</span><span class="p-area">' + prop.area + '</span><span class="p-profi">' + prop.profile + '</span></div>';
                    }
 			
 			
