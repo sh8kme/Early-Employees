@@ -238,7 +238,7 @@ map.addControl(new mapboxgl.NavigationControl());
                        details.innerHTML +=
                             '<a href="profile?profile=' + prop.mid + '" target="_blank" class="blue l-profile-link">View Profile &#10230;</a>';
                      details.innerHTML +=
-                            '<div class="p-hide"><span class="p-lang">' + prop.language + '</span><span class="p-area">' + prop.area + '</span><span class="p-profi">' + prop.profile + '</span></div>';
+                            '<div class="p-hide"><span class="p-lang">' + prop.language + '</span><span class="p-area">' + prop.area + '</span><span class="p-profi">' + prop.profile + '</span><span class="p-twitter">' + prop.twitter + '</span><span class="p-facebook">' + prop.facebook + '</span><span class="p-linkedin">' + prop.linkedin + '</span></div>';
                    }
 			
 			
