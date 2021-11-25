@@ -168,7 +168,7 @@ else if(deviceLabel =="All Android"){
 var travelanswer= section1Qs[section1array[3]].options[urlArray[section1array[3]]].label;
 
 if((travelanswer == 'No employees')||(travelanswer == "I don't know")){
-    //$('.does-travel').hide();
+    $('.does-travel').hide();
     spitDebug("", "Met Travel Condition : No Employees or I dont know  -- Does Travel");
 }
 
