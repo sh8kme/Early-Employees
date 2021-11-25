@@ -374,9 +374,12 @@ function setRiskColor (selector, colorArray){
         $(selector+" "+ keyGridColorClass +".tilecontainer").removeClass("unacceptable");
         $(selector+" "+ keyGridColorClass +".tilecontainer").removeClass("tolerable");
         $(selector+" "+ keyGridColorClass +".tilecontainer").addClass(colorArray[keyGridColor].color);
-       
+       console.log(selector);
+        console.log(keyGridColorClass);
     }
 }
+
+console.log('loaded');
 
 setRiskColor("#REDUCE .MRMmobileicons", gridColorMTDArray);
 setRiskColor("#REDUCE .compgridcards", gridColorMTDArray);
