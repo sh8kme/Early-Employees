@@ -386,7 +386,6 @@ setRiskColor("#REDUCE .compgridcards", gridColorMTDArray);
 setRiskColor("#REDUCE .vtilecontainer", gridColorMTDArray);
 setRiskColor("#YMRA .MRMmobileicons", gridColorArray);
 setRiskColor("#YMRA .vtilecontainer", gridColorArray);
-setRiskColor("#YMRA .arrow-open-icon", gridColorArray);
 
 $("#mtd-toggle input").change(function() {
     if($(this).is(':checked') == false){
